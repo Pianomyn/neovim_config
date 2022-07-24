@@ -59,6 +59,7 @@ call plug#end()
 
 :colorscheme codedark
 let g:airline_theme="base16_material_vivid"
+let g:blamer_delay = 100 
 
 " ---------------------------------------------------------------------------------------------------------------------
 
