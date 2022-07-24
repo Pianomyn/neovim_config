@@ -31,6 +31,7 @@ endif
 call plug#begin("~/.config/nvim/plugged")
 " Vim
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim' " Fuzzy find files
 Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
@@ -41,6 +42,7 @@ Plug 'williamboman/nvim-lsp-installer'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hrsh7th/nvim-cmp/'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'tomasiser/vim-code-dark'
 
 " Directory
 Plug 'ms-jpq/chadtree'
@@ -49,9 +51,15 @@ Plug 'ms-jpq/chadtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 call plug#end()
+
+:colorscheme codedark
+let g:airline_theme="base16_material_vivid"
+
 " ---------------------------------------------------------------------------------------------------------------------
 
+
 " Mappings
+nnoremap <C-f> <cmd>CHADopen<cr>
 
 
 
