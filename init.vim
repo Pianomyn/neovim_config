@@ -41,6 +41,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hrsh7th/nvim-cmp/'
+Plug 'hrsh7th/cmp-nvim-lsp'
 
 " Colors
 Plug 'rafi/awesome-vim-colorschemes'
