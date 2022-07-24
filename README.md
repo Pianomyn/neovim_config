@@ -35,7 +35,7 @@ Usage: Toggle diagnostics provided by LSP
 
 
 ## Treesitter
-Plug: 
+Plug: nvim-treesitter/nvim-treesitter <br/>
 Usage: Generates syntax tree for a program based on grammar file of a <br/>
 supported language. Can be used for syntax highlighting.
 - TSInstall [language_name] (Install grammar file)
