@@ -3,7 +3,7 @@
 
 ## LSP Config
 Plug: neovim/nvim-lspconfig <br/>
-Usage: <br/>
+Usage: Info on installed language servers
 - LspInfo (status of language servers)
     - npm i -g pyright
 - LspStart [server_name]
@@ -28,13 +28,16 @@ Usage: Similar to COC auto-complete.
 
 ## LSP Toggle
 Plug: WhoIsSethDaniel/toggle-lsp-diagnostics.nvim <br/>
-Usage: Toggle diagnostics provided by LSP<br/>
+Usage: Toggle diagnostics provided by LSP
 - ToggleDiagOne
 - ToggleDiagOff
 <br/><br/>
 
 
 ## Treesitter
-Plug:
-Usage:
+Plug: 
+Usage: Generates syntax tree for a program based on grammar file of a <br/>
+supported language. Can be used for syntax highlighting.
+- TSInstall [language_name] (Install grammar file)
+- TSModuleInfo: Table of current languages supported and functionality
 <br/><br/>
