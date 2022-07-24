@@ -1,11 +1,6 @@
 # Plugin Usage
 <br/><br/>
 
-## Git Blame
-<b>Plug</b>: APZelos/blamer.nvim <br/>
-<b>Usage</b>: Gitlens style git blame 
-- BlamerToggle
-<br/><br/>
 
 ## LSP Config
 <b>Plug</b>: neovim/nvim-lspconfig <br/>
@@ -45,4 +40,10 @@
 supported language. Can be used for syntax highlighting.
 - TSInstall [language_name] (Install grammar file)
 - TSModuleInfo: Table of current languages supported and functionality
+<br/><br/>
+
+## Git Blame
+<b>Plug</b>: APZelos/blamer.nvim <br/>
+<b>Usage</b>: Gitlens style git blame 
+- BlamerToggle
 <br/><br/>
