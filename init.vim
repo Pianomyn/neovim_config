@@ -29,12 +29,11 @@ endif
 
 
 call plug#begin("~/.config/nvim/plugged")
-" Vim
+" Editor 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim' " Fuzzy find files
 Plug 'preservim/nerdcommenter'
-Plug 'ryanoasis/vim-devicons'
 
 " Language
 Plug 'neovim/nvim-lspconfig'
@@ -44,16 +43,18 @@ Plug 'hrsh7th/nvim-cmp/'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'
 
-" Colors
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'tomasiser/vim-code-dark'
-
 " Directory
 Plug 'ms-jpq/chadtree'
 
 "Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'APZelos/blamer.nvim'
+
+" Colors, Icons
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'tomasiser/vim-code-dark'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 :colorscheme codedark

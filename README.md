@@ -1,6 +1,12 @@
 # Plugin Usage
 <br/><br/>
 
+## Git Blame
+<b>Plug</b>: APZelos/blamer.nvim <br/>
+<b>Usage</b>: Gitlens style git blame 
+- BlamerToggle
+<br/><br/>
+
 ## LSP Config
 <b>Plug</b>: neovim/nvim-lspconfig <br/>
 <b>Usage</b>: Info on installed language servers
