@@ -1,7 +1,7 @@
 # Plugin Usage
 <br/><br/>
 
-### LSP Config
+## LSP Config
 Plug: neovim/nvim-lspconfig <br/>
 Usage: <br/>
 - LspInfo (status of language servers)
@@ -20,8 +20,8 @@ Usage: (Can replace npm i -g)
 <br/><br/>
 
 ## LSP Completion
-Plug: nvim-lua/completion-nvim
-Usage: Similar to COC auto-complete. <br/>
+Plug: nvim-lua/completion-nvim <br/>
+Usage: Similar to COC auto-complete.
 - Copy code from github README.
 - Set keymap for next and previous completion suggestion.
 <br/><br/>
