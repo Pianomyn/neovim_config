@@ -13,6 +13,9 @@ set expandtab " Replace tab character with spaces
 set tabstop=4 " The width of a tab character in spaces
 set shiftwidth=4 " The width of an indent in spaces
 set smarttab " Will insert spaces as necessary to reach the next indent
+
+" Patterns to ignore in vimgrep
+:set wildignore+=volumes/**
 " ---------------------------------------------------------------------------------------------------------------------
 
 
