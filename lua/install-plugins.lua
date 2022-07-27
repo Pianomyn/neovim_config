@@ -57,7 +57,12 @@ return packer.startup(function(use)
             require("plugins/cmp-nvim-lsp")
         end
     })
-	use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
+	use ({
+        "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim",
+        config = function()
+            require("plugins/toggle-lsp-diagnostics")
+        end
+    })
 
 	-- Directory
 	use ({
