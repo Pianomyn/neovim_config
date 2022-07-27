@@ -18,7 +18,13 @@ return packer.startup(function(use)
 			require("plugins/lualine")
 		end
 	})
-	use "ctrlpvim/ctrlp.vim" -- Fuzzy find files
+    use ({
+        "nvim-telescope/telescope.nvim",
+        config = function()
+            require("plugins/telescope")
+        end,
+        requires = {'nvim-lua/plenary.nvim'} 
+    })
 	use "preservim/nerdcommenter"
 
 	-- Language
