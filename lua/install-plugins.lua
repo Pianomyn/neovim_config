@@ -18,7 +18,6 @@ return packer.startup(function(use)
 			require("plugins/lualine")
 		end
 	})
-    use 'feline-nvim/feline.nvim'
 	use "ctrlpvim/ctrlp.vim" -- Fuzzy find files
 	use "preservim/nerdcommenter"
 
