@@ -72,7 +72,6 @@ nnoremap <C-f> <cmd>CHADopen<cr>
 
 
 
-
 lua << EOF
 --vim.cmd([[ autocmd ColorScheme * :lua require('vim.lsp.diagnostic')._define_default_signs_and_highlights() ]]) 
 require("nvim-lsp-installer").setup {
