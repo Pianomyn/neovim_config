@@ -16,7 +16,8 @@ return packer.startup(function(use)
 		"nvim-lualine/lualine.nvim",
 		config = function()
 			require("plugins/lualine")
-		end
+		end,
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	})
 
 	-- Language
@@ -85,7 +86,6 @@ return packer.startup(function(use)
 	-- Colors, Icons
 	use "rafi/awesome-vim-colorschemes"
 	use "tomasiser/vim-code-dark"
-	use "ryanoasis/vim-devicons"
 
 	if packer_bootstrap then
 		require("packer").sync()
