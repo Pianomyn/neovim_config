@@ -6,7 +6,7 @@ vim.opt.wildignore = {"__pycache__", "volumes"}
 
 vim.wo.colorcolumn = "120"
 
-vim.cmd("colorscheme codedark")
+vim.cmd("silent! colorscheme codedark")
 vim.cmd("set paste")
 vim.cmd("set encoding=utf-8")
 

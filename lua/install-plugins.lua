@@ -18,6 +18,8 @@ return packer.startup(function(use)
 			require("plugins/lualine")
 		end
 	})
+
+	-- Language
     use ({
         "nvim-telescope/telescope.nvim",
         config = function()
@@ -25,14 +27,36 @@ return packer.startup(function(use)
         end,
         requires = {'nvim-lua/plenary.nvim'} 
     })
-	use "preservim/nerdcommenter"
-
-	-- Language
-	use "neovim/nvim-lspconfig"
-	use "williamboman/nvim-lsp-installer"
-	use {"nvim-treesitter/nvim-treesitter", {["do"] = ":TSUpdate"}}
-	use "hrsh7th/nvim-cmp"
-	use "hrsh7th/cmp-nvim-lsp"
+	use ({
+        "neovim/nvim-lspconfig",
+        config = function()
+            require("plugins/nvim-lspconfig")
+        end
+    })
+	use ({
+        "williamboman/nvim-lsp-installer",
+        config = function()
+            require("plugins/nvim-lsp-installer")
+       end
+    })
+	use ({
+        "nvim-treesitter/nvim-treesitter", 
+        config = function()
+            require("plugins/nvim-treesitter")
+        end
+    })
+	use ({
+        "hrsh7th/nvim-cmp",
+        config = function()
+            require("plugins/nvim-cmp")
+        end
+    })
+	use ({
+        "hrsh7th/cmp-nvim-lsp",
+        config = function()
+            require("plugins/cmp-nvim-lsp")
+        end
+    })
 	use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
 
 	-- Directory
