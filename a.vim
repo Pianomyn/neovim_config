@@ -74,7 +74,6 @@ nnoremap <C-f> <cmd>CHADopen<cr>
 
 
 lua << EOF
---vim.cmd([[ autocmd ColorScheme * :lua require('vim.lsp.diagnostic')._define_default_signs_and_highlights() ]]) 
 require("nvim-lsp-installer").setup {
     automatic_installation = true
 }
@@ -118,7 +117,7 @@ local cmp = require'cmp'
 
 
   -- Setup lspconfig.
-  local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require('lspconfig')['pyright'].setup {
     capabilities = capabilities
