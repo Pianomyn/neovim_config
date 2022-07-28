@@ -1,2 +1,2 @@
 require("general/editor")
-require("general/keybindings")
+require("general/keymap")
