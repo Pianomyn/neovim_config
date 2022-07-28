@@ -64,6 +64,12 @@ return packer.startup(function(use)
             require("plugins/toggle-lsp-diagnostics")
         end
     })
+    use({
+        "junegunn/fzf"
+    })
+    use({
+        "junegunn/fzf.vim"
+    })
 
 	-- Directory
 	use ({
