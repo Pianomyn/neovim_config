@@ -47,3 +47,7 @@ supported language. Can be used for syntax highlighting.
 <b>Usage</b>: Gitlens style git blame 
 - BlamerToggle
 <br/><br/>
+
+
+## Other
+Install nerdfonts to get devicons
