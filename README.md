@@ -51,3 +51,4 @@ supported language. Can be used for syntax highlighting.
 
 ## Other
 Install nerdfonts to get devicons
+sudo apt-get install ripgrep (used with fzf)
