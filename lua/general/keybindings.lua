@@ -1,11 +1,10 @@
 local keymap = vim.api.nvim_set_keymap
-local opts = {noremap = true }
-local function nkeymap(key, map)
-    keymap('n', key, map, opts)
-end
+local opts = {noremap = true, silent = true}
 
---nkeymap('gd',':lua vim.lsp.buf.definition()<cr>')
-keymap("n", "gd", ":lua vim.lsp.buf.definition()<cr>", {noremap = true, silent = true})
+keymap("n", "gd", ":lua vim.lsp.buf.definition()<cr>", opts)
 
+keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<C-p>", ":Telescope find_files<CR>", opts)
+keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
 
-keymap("n", "<C-f>", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
+keymap("n", "<Leader>d", ":BlamerToggle<CR>", opts)

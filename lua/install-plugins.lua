@@ -81,7 +81,12 @@ return packer.startup(function(use)
 	-- Git
 	use "airblade/vim-gitgutter"
 	use "tpope/vim-fugitive"
-	use "APZelos/blamer.nvim"
+	use ({
+        "APZelos/blamer.nvim",
+        config = function()
+            require("plugins/blamer")
+        end
+    })
 
 	-- Colors, Icons
 	use "rafi/awesome-vim-colorschemes"
