@@ -50,5 +50,7 @@ supported language. Can be used for syntax highlighting.
 
 
 ## Other
-Install nerdfonts to get devicons
-sudo apt-get install ripgrep (used with fzf)
+- Install nerdfonts to get devicons
+- Install ripgrep (Used with fzf)
+    - sudo apt-get install ripgrep
+    - brew install ripgrep 
