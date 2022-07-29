@@ -8,3 +8,5 @@ keymap("n", "<C-p>", ":Files<CR>", opts)
 keymap("n", "<C-g>", ":Rg<CR>", opts)
 
 keymap("n", "<Leader>d", ":BlamerToggle<CR>", opts)
+
+keymap("n", "<Leader>`", ":!", {noremap = true})
