@@ -13,6 +13,16 @@ return packer.startup(function(use)
 
 	-- Editor
 	use ({
+		"kyazdani42/nvim-tree.lua",
+		requires = {
+            "kyazdani42/nvim-web-devicons",
+		},
+		config = function()
+			require("plugins/nvim-tree")
+		end,
+		tag = "nightly" -- optional, updated every week. (see issue #1193)
+	})
+	use ({
 		"nvim-lualine/lualine.nvim",
 		config = function()
 			require("plugins/lualine")
@@ -21,68 +31,33 @@ return packer.startup(function(use)
 	})
 
 	-- Language
-    use ({
-        "nvim-telescope/telescope.nvim",
-        config = function()
-            require("plugins/telescope")
-        end,
-        requires = {'nvim-lua/plenary.nvim'} 
-    })
 	use ({
         "neovim/nvim-lspconfig",
+        requires = {
+            "hrsh7th/nvim-cmp",
+            "hrsh7th/cmp-nvim-lsp",
+            "williamboman/nvim-lsp-installer",
+            "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim",
+        },
         config = function()
             require("plugins/nvim-lspconfig")
         end
     })
 	use ({
-        "williamboman/nvim-lsp-installer",
-        config = function()
-            require("plugins/nvim-lsp-installer")
-       end
-    })
-	use ({
         "nvim-treesitter/nvim-treesitter", 
+        requires = {
+            "p00f/nvim-ts-rainbow",
+        },
         config = function()
             require("plugins/nvim-treesitter")
         end
     })
-	use ({
-        "hrsh7th/nvim-cmp",
-        config = function()
-            require("plugins/nvim-cmp")
-        end
-    })
-	use ({
-        "hrsh7th/cmp-nvim-lsp",
-        config = function()
-            require("plugins/cmp-nvim-lsp")
-        end
-    })
-	use ({
-        "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim",
-        config = function()
-            require("plugins/toggle-lsp-diagnostics")
-        end
-    })
     use({
-        "junegunn/fzf"
+        "junegunn/fzf.vim",
+        requires = {
+            "junegunn/fzf"
+        }
     })
-    use({
-        "junegunn/fzf.vim"
-    })
-
-	-- Directory
-	use ({
-		"kyazdani42/nvim-tree.lua",
-		requires = {
-		"kyazdani42/nvim-web-devicons", -- optional, for file icons
-		},
-		config = function()
-			require("plugins/nvim-tree")
-		end,
-		tag = "nightly" -- optional, updated every week. (see issue #1193)
-	})
-	
 
 	-- Git
 	use "airblade/vim-gitgutter"
