@@ -10,6 +10,7 @@ vim.wo.colorcolumn = "120"
 vim.cmd("silent! colorscheme codedark")
 vim.cmd("set paste")
 vim.cmd("set encoding=utf-8")
+vim.cmd("set hlsearch")
 
 vim.cmd("set expandtab")
 vim.cmd("set autoindent")
