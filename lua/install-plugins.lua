@@ -39,7 +39,7 @@ return packer.startup(
                 "hrsh7th/nvim-cmp",
                 "hrsh7th/cmp-nvim-lsp",
                 "williamboman/nvim-lsp-installer",
-                "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim",
+                "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
             },
             config = function()
                 require("plugins/nvim-lspconfig")
@@ -62,7 +62,12 @@ return packer.startup(
         })
 
         -- Git
-        use "airblade/vim-gitgutter"
+        use ({ 'sindrets/diffview.nvim',
+            requires = 'nvim-lua/plenary.nvim',
+            config = function()
+                require("plugins/diffview")
+            end
+        })
         use "tpope/vim-fugitive"
         use ({
             "APZelos/blamer.nvim",
