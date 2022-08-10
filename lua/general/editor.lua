@@ -1,7 +1,7 @@
 vim.opt.termguicolors = true
 vim.opt.background = "dark" 
 vim.opt.number = true
-vim.opt.mouse = "a"
+vim.opt.relativenumber = true
 vim.opt.wildignore = {"__pycache__", "volumes"} 
 vim.opt.cursorline = true
 
