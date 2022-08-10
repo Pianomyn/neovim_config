@@ -2,8 +2,8 @@ local keymap = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
 
 -- File navigation
-keymap("n", "gd", ":lua vim.lsp.buf.definition()<cr>", opts)
-keymap("n", "gD", ":lua vim.lsp.buf.declaration()<cr>", opts)
+keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
+keymap("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts)
 
 -- File directory
 keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
