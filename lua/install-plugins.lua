@@ -32,7 +32,6 @@ return packer.startup(function(use)
 
 	-- Editor
 	use "kyazdani42/nvim-tree.lua"
-	use "kyazdani42/nvim-web-devicons"
 	use "nvim-lualine/lualine.nvim"
 	use "kyazdani42/nvim-web-devicons"
 
