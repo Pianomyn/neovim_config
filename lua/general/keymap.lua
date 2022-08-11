@@ -20,3 +20,9 @@ keymap('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 keymap('n', '<leader>d[', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
 keymap('n', '<leader>d]', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
 keymap("n", "<Leader>td", ":ToggleDiag<CR>", opts)
+
+
+
+-- Other
+--keymap("n", "<C-j>", "<C-w>j", opts)
+-- keymap("n", "<C-k>", "<C-w>k", opts)

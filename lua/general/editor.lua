@@ -1,3 +1,4 @@
+vim.opt.completeopt = {"menu", "menuone", "noselect"}
 vim.opt.termguicolors = true
 vim.opt.background = "dark" 
 vim.opt.number = true
@@ -12,8 +13,11 @@ vim.cmd("set paste")
 vim.cmd("set encoding=utf-8")
 vim.cmd("set hlsearch")
 
--- vim.cmd("set expandtab")
--- vim.cmd("set autoindent")
---vim.cmd("set tabstop=4")
---vim.cmd("set shiftwidth=4")
---vim.cmd("set smarttab")
+vim.cmd("set expandtab")
+vim.cmd("set autoindent")
+vim.cmd("set tabstop=4")
+vim.cmd("set shiftwidth=4")
+vim.cmd("set smarttab")
+vim.opt.shortmess:append "c"
+vim.opt.pumheight = 10
+vim.opt.cmdheight= 2
