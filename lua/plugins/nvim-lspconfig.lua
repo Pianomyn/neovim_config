@@ -1,12 +1,7 @@
 require("nvim-lsp-installer").setup {
     ensure_installed = {"pyright", "tsserver", "eslint"},
     automatic_installation = true
-}
-require'cmp'.setup {
-  sources = {
-    { name = 'nvim_lsp' }
-  }
-}
+    }
 
 local opts = { noremap=true, silent=true }
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
@@ -26,22 +21,29 @@ local lsp_flags = {
 }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
+local lspconfig = require("lspconfig")
 
-require('lspconfig')['pyright'].setup{
+lspconfig['pyright'].setup{
+--    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities
+}
+lspconfig['eslint'].setup{
+ --   on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities
+}
+lspconfig['tsserver'].setup{
+  --  on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities
+}
+lspconfig['html'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
 }
-require('lspconfig')['eslint'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    capabilities = capabilities
-}
-require('lspconfig')['tsserver'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    capabilities = capabilities
-}
+
 require'toggle_lsp_diagnostics'.init({ start_on = true, underline = false })

@@ -13,6 +13,8 @@ require("packer").init({
 return packer.startup(
     function(use)
 
+        use ('wbthomason/packer.nvim')
+
         -- Editor
         use ({
             "kyazdani42/nvim-tree.lua",
@@ -34,17 +36,17 @@ return packer.startup(
 
         -- Language
         use ({
-            "neovim/nvim-lspconfig",
-            requires = {
                 "hrsh7th/nvim-cmp",
-                "hrsh7th/cmp-nvim-lsp",
-                "williamboman/nvim-lsp-installer",
-                "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
-            },
-            config = function()
-                require("plugins/nvim-lspconfig")
-            end
+                config = function()
+                    require("plugins/cmp")
+                end,
         })
+                use "hrsh7th/cmp-nvim-lsp"
+                use "hrsh7th/cmp-buffer"
+                use "hrsh7th/cmp-nvim-lua"
+		use "L3MON4D3/LuaSnip"
+		use "saadparwaiz1/cmp_luasnip"
+        
         use ({
             "nvim-treesitter/nvim-treesitter", 
             requires = {
@@ -59,6 +61,16 @@ return packer.startup(
             requires = {
                 "junegunn/fzf"
             }
+        })
+        use ({
+            "neovim/nvim-lspconfig",
+            requires = {
+                "williamboman/nvim-lsp-installer",
+                "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
+            },
+            config = function()
+                require("plugins/nvim-lspconfig")
+            end
         })
 
         -- Git
