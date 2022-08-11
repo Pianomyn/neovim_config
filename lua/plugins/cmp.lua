@@ -1,26 +1,4 @@
-vim.opt.completeopt = {"menu", "menuone", "noinsert"} 
-local on_attach = function(client, bufnr)
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-end
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
---capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
-local lspconfig = require("lspconfig")
-
-
-lspconfig["pyright"].setup{
-    on_attach= on_attach,
-    capabilities = capabilities
-}
-lspconfig["eslint"].setup{
-    capabilities = capabilities
-}
-lspconfig["tsserver"].setup{
-    capabilities = capabilities
-}
-lspconfig["html"].setup{
-    capabilities = capabilities
-}
+vim.opt.completeopt = {"menu", "menuone", "noselect"} 
 
 local cmp_status, cmp = pcall(require, "cmp")
 if not cmp_status then
@@ -47,6 +25,9 @@ cmp.setup({
       expand = function(args)
         luasnip.lsp_expand(args.body) -- For `luasnip` users.
       end,
+    },
+    window = {
+        documentation = cmp.config.window.bordered()
     },
     mapping = {
         ["<C-k>"] = cmp.mapping.select_prev_item(select_opts), 
@@ -110,33 +91,3 @@ cmp.setup({
     }
 })
 
-
-
-
-
-
-
-
-
--- LSP Installer
-local status_installer, lsp_installer = pcall(require, "nvim-lsp-installer")
-if not status_installer then
-    return
-end
-
-lsp_installer.setup {
-    ensure_installed = {"pyright", "tsserver", "eslint"},
-}
-    
-local opts = { noremap=true, silent=true }
-
-
-
-
-
--- LSP Diagnostic Toggler
-vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
-require("toggle_lsp_diagnostics").init({ start_on = true, underline = false })
