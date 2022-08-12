@@ -1,0 +1,4 @@
+bufferline (tabs and groups for nvim buffers)
+illuminate (highlight all instances of word)
+blankline (indentation guide for for all lines)
+lsp signature (function signature popup)
