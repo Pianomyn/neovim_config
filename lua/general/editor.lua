@@ -7,7 +7,7 @@ vim.opt.relativenumber = true
 vim.opt.wildignore = {"__pycache__", "volumes"} 
 vim.opt.cursorline = true
 
-vim.wo.colorcolumn = "120"
+vim.wo.colorcolumn = "80,120"
 
 vim.cmd("silent! colorscheme codedark")
 vim.cmd("set encoding=utf-8")
