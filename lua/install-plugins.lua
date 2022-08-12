@@ -31,40 +31,60 @@ return packer.startup(function(use)
 	use ("wbthomason/packer.nvim")
 
 	-- Editor
-	use "kyazdani42/nvim-tree.lua"
+	use ({ 
+        "kyazdani42/nvim-tree.lua",
+        requires = {
+            "kyazdani42/nvim-web-devicons"
+        },
+    })
 	use "nvim-lualine/lualine.nvim"
-	use "junegunn/fzf.vim"
-	use "junegunn/fzf"
-    use "RRethy/vim-illuminate"
+	use ({
+        "junegunn/fzf.vim",
+        requires = {
+            "junegunn/fzf",
+        },
+    })
     use "lukas-reineke/indent-blankline.nvim"
 
 	-- Language
-	use "neovim/nvim-lspconfig"
+	use "neovim/nvim-lspconfig",
 	use "williamboman/nvim-lsp-installer"
 	use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
     use "ray-x/lsp_signature.nvim"
 
     -- Autocomplete
-	use "hrsh7th/nvim-cmp"
-	use "hrsh7th/cmp-nvim-lsp"
-	use "hrsh7th/cmp-buffer"
-	use "hrsh7th/cmp-nvim-lua"
-	use "L3MON4D3/LuaSnip"
-	use "saadparwaiz1/cmp_luasnip"
+	use ({
+        "hrsh7th/nvim-cmp",
+        requires = {
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-nvim-lua",
+            "L3MON4D3/LuaSnip",
+            "saadparwaiz1/cmp_luasnip",
+        },
+    })
 
     -- Syntax
-	use "nvim-treesitter/nvim-treesitter"
-	use "p00f/nvim-ts-rainbow"
+	use ({
+        "nvim-treesitter/nvim-treesitter",
+        requires = {
+            "p00f/nvim-ts-rainbow",
+        },
+    })
 
 	-- Git
-	use {"sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim"}
+	use ({
+        "sindrets/diffview.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
     use "tpope/vim-fugitive"
 	use "APZelos/blamer.nvim"
 
 	-- Colors, Icons
 	use "rafi/awesome-vim-colorschemes"
 	use "tomasiser/vim-code-dark"
-	use "kyazdani42/nvim-web-devicons"
 
 	if packer_bootstrap then
 		require("packer").sync()

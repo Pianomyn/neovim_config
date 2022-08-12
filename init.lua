@@ -8,4 +8,4 @@ require("plugins/lualine")
 require("plugins/treesitter")
 require("plugins/diffview")
 require("plugins/blamer")
-
+require("plugins/indent-blankline")
