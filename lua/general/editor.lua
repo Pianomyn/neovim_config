@@ -16,7 +16,7 @@ vim.cmd("set hlsearch")
 vim.cmd("set expandtab")
 vim.cmd("set autoindent")
 vim.cmd("set smarttab")
-vim.cmd("set tabstop=4")
-vim.cmd("set shiftwidth=4")
+vim.cmd("set tabstop=2")
+vim.cmd("set shiftwidth=2")
 -- vim.opt.pumheight = 10
 -- vim.opt.cmdheight= 2
