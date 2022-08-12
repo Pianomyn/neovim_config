@@ -28,6 +28,7 @@ packer.init({
 
 return packer.startup(function(use)
 
+    -- Packer
 	use ("wbthomason/packer.nvim")
 
 	-- Editor
@@ -47,10 +48,10 @@ return packer.startup(function(use)
     use "lukas-reineke/indent-blankline.nvim"
 
 	-- Language
-	use "neovim/nvim-lspconfig",
+	use "neovim/nvim-lspconfig"
 	use "williamboman/nvim-lsp-installer"
 	use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
-    use "ray-x/lsp_signature.nvim"
+	use "ray-x/lsp_signature.nvim"
 
     -- Autocomplete
 	use ({
@@ -82,7 +83,7 @@ return packer.startup(function(use)
     use "tpope/vim-fugitive"
 	use "APZelos/blamer.nvim"
 
-	-- Colors, Icons
+	-- Colors, Themes 
 	use "rafi/awesome-vim-colorschemes"
 	use "tomasiser/vim-code-dark"
 
