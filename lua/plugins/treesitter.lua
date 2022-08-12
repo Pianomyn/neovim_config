@@ -1,5 +1,7 @@
+local grammar_list = {"python", "javascript", "typescript"}, 
+
 require("nvim-treesitter.configs").setup {
-    ensure_installed = {"python", "javascript", "typescript"}, 
+    ensure_installed = grammar_list,
     highlight = {
         enable = true,
     },

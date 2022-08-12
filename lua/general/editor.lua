@@ -15,9 +15,8 @@ vim.cmd("set hlsearch")
 
 vim.cmd("set expandtab")
 vim.cmd("set autoindent")
+vim.cmd("set smarttab")
 vim.cmd("set tabstop=4")
 vim.cmd("set shiftwidth=4")
-vim.cmd("set smarttab")
-vim.opt.shortmess:append "c"
-vim.opt.pumheight = 10
-vim.opt.cmdheight= 2
+-- vim.opt.pumheight = 10
+-- vim.opt.cmdheight= 2
