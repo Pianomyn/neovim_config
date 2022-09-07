@@ -18,5 +18,6 @@ vim.cmd("set autoindent")
 vim.cmd("set smarttab")
 vim.cmd("set tabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set splitbelow")
 -- vim.opt.pumheight = 10
 -- vim.opt.cmdheight= 2
