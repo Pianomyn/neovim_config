@@ -2,12 +2,8 @@ local null_ls = require("null-ls")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
     sources = {
-      null_ls.builtins.formatting.black.with({
-        prefer_local = "venv/bin"
-      }),
-      null_ls.builtins.formatting.isort.with({
-        prefer_local = "venv/bin"
-      }),
+      null_ls.builtins.formatting.isort,
+      null_ls.builtins.formatting.black,
       null_ls.builtins.formatting.prettier,
     },
     -- you can reuse a shared lspconfig on_attach callback here

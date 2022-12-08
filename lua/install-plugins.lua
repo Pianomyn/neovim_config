@@ -55,7 +55,10 @@ return packer.startup(function(use)
     use "ray-x/lsp_signature.nvim"
 
     -- Formatting and Linting
-    use "jose-elias-alvarez/null-ls.nvim"
+    use {
+      "jose-elias-alvarez/null-ls.nvim",
+      "williamboman/mason.nvim"
+    }
 
     -- Autocomplete
     use ({
