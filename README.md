@@ -1,6 +1,9 @@
 # Plugin Usage
 <br/><br/>
 
+## Mason
+Package installer for linters and formatters <br/>
+:Mason
 
 ## LSP Config
 <b>Plug</b>: neovim/nvim-lspconfig <br/>
