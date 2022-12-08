@@ -1,10 +1,9 @@
 local null_ls = require("null-ls")
-
--- Format files on save
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
     sources = {
-        null_ls.builtins.formatting.autopep8,
+      null_ls.builtins.formatting.autopep8,
+      null_ls.builtins.formatting.prettier,
     },
     -- you can reuse a shared lspconfig on_attach callback here
     on_attach = function(client, bufnr)
@@ -15,7 +14,11 @@ null_ls.setup({
                 buffer = bufnr,
                 callback = function()
                     -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-                    vim.lsp.buf.formatting_sync()
+                    vim.lsp.buf.format({
+                      bufnr = bufnr,
+                      filter = function(client)
+                        return client.name == "null-ls"
+                    })
                 end,
             })
         end

@@ -54,7 +54,7 @@ return packer.startup(function(use)
     use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
     use "ray-x/lsp_signature.nvim"
 
-    -- Linting
+    -- Formatting and Linting
     use "jose-elias-alvarez/null-ls.nvim"
 
     -- Autocomplete

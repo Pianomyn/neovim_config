@@ -21,7 +21,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protoc
 
 for key, value in pairs(server_list) do
     lspconfig[value].setup {
-        on_attach= on_attach,
+        on_attach = on_attach,
         capabilities = capabilities
     }
 end
