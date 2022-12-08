@@ -46,12 +46,16 @@ return packer.startup(function(use)
         },
     })
     use "lukas-reineke/indent-blankline.nvim"
+    use "RRethy/vim-illuminate"
 
     -- Language
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
     use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
     use "ray-x/lsp_signature.nvim"
+
+    -- Linting
+    use "jose-elias-alvarez/null-ls.nvim"
 
     -- Autocomplete
     use ({
