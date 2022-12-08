@@ -30,6 +30,12 @@ return packer.startup(function(use)
 
     -- Packer
     use ("wbthomason/packer.nvim")
+    
+    -- Package Installer
+    use {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+    }
 
     -- Editor
     use ({ 
@@ -50,14 +56,12 @@ return packer.startup(function(use)
 
     -- Language
     use "neovim/nvim-lspconfig"
-    use "williamboman/nvim-lsp-installer"
     use "WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
     use "ray-x/lsp_signature.nvim"
 
     -- Formatting and Linting
     use {
       "jose-elias-alvarez/null-ls.nvim",
-      "williamboman/mason.nvim"
     }
 
     -- Autocomplete

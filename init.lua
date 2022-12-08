@@ -1,6 +1,7 @@
 require("install-plugins")
 require("general")
 
+require("plugins/mason")
 require("plugins/cmp")
 require("plugins/lsp")
 require("plugins/nvim-tree")
@@ -11,5 +12,4 @@ require("plugins/blamer")
 require("plugins/indent-blankline")
 require("plugins/illuminate")
 require("plugins/null-ls")
-require("mason").setup()
 

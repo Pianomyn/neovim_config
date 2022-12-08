@@ -1,14 +1,5 @@
 local server_list = {"pyright", "tsserver", "html"}
 
--- ####################################################################################################################
--- LSP Installer
-local lsp_installer = require("nvim-lsp-installer")
-
-lsp_installer.setup {
-    ensure_installed = server_list,
-    ensure_installed = true
-}
-
 
 -- ####################################################################################################################
 -- LSP Config
