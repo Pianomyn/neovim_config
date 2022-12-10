@@ -17,7 +17,7 @@ keymap("n", "<Leader>dvo", ":DiffviewOpen<CR>", opts)
 keymap("n", "<Leader>dvc", ":DiffviewClose<CR>", opts)
 
 -- Diagnostics
-keymap("n", "<leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-keymap("n", "<leader>d[", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
-keymap("n", "<leader>d]", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
+keymap("n", "<Leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+keymap("n", "<Leader>d[", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+keymap("n", "<Leader>d]", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
 keymap("n", "<Leader>td", ":ToggleDiag<CR>", opts)
