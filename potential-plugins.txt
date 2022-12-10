@@ -1,6 +1,6 @@
 bufferline (tabs and groups for nvim buffers)
 vimspector (debugging)
-null-ls (autoformatting)
+null-ls (autoformatting) DONE
 illuminate (highlight all instances of word) DONE
 indent-blankline (indentation guide for for all lines) DONE
 lsp signature (function signature popup) DONE

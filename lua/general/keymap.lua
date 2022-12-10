@@ -1,6 +1,9 @@
 local keymap = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
 
+-- Tabs
+keymap("n", "<Leader>t", ":tabnew<CR>", opts)
+
 -- File navigation
 keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
 keymap("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts)
@@ -16,7 +19,7 @@ keymap("n", "<Leader>dvo", ":DiffviewOpen<CR>", opts)
 keymap("n", "<Leader>dvc", ":DiffviewClose<CR>", opts)
 
 -- Diagnostics
-keymap('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-keymap('n', '<leader>d[', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-keymap('n', '<leader>d]', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+keymap("n", "<leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+keymap("n", "<leader>d[", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+keymap("n", "<leader>d]", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
 keymap("n", "<Leader>td", ":ToggleDiag<CR>", opts)
