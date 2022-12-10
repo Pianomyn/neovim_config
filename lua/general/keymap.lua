@@ -1,17 +1,15 @@
 local keymap = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
 
--- Tabs
-keymap("n", "<Leader>t", ":tabnew<CR>", opts)
+-- File directory
+keymap("n", "<C-t>", ":tabnew<CR>", opts)
+keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<C-p>", ":Files<CR>", opts)
+keymap("n", "<C-g>", ":Rg<CR>", opts)
 
 -- File navigation
 keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
 keymap("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts)
-
--- File directory
-keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
-keymap("n", "<C-p>", ":Files<CR>", opts)
-keymap("n", "<C-g>", ":Rg<CR>", opts)
 
 -- Git
 keymap("n", "gb", ":BlamerToggle<CR>", opts)
