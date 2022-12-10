@@ -4,11 +4,21 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
     vim.cmd("packadd packer.nvim")
 end
 
+local packer = require("packer")
+
+packer.startup({
+  function(use)
+    if packer_bootstrap then
+      packer.sync()
+    end
+  end
+})
+
 
 vim.cmd([[
 augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost install-plugins.lua source <afile> | PackerSync
 augroup end
 ]])
 
