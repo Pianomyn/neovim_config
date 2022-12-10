@@ -1,5 +1,5 @@
-bufferline (tabs and groups for nvim buffers)
-vimspector (debugging)
+nvim-dap (debugging)
+bufferline (tabs and groups for nvim buffers) DONE (Default tabbing)
 null-ls (autoformatting) DONE
 illuminate (highlight all instances of word) DONE
 indent-blankline (indentation guide for for all lines) DONE
