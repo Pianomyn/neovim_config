@@ -4,17 +4,6 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
     vim.cmd("packadd packer.nvim")
 end
 
-local packer = require("packer")
-
-packer.startup({
-  function(use)
-    if packer_bootstrap then
-      packer.sync()
-    end
-  end
-})
-
-
 vim.cmd([[
 augroup packer_user_config
     autocmd!
@@ -115,6 +104,6 @@ return packer.startup(function(use)
     use "tomasiser/vim-code-dark"
 
     if packer_bootstrap then
-        require("packer").sync()
+        packer.sync()
     end
 end)
