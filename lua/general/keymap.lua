@@ -3,6 +3,8 @@ local opts = {noremap = true, silent = true}
 
 -- File directory
 keymap("n", "<C-t>", ":tabnew<CR>", opts)
+keymap("n", "<S-h>", ":tabp<CR>", opts)
+keymap("n", "<S-l>", ":tabn<CR>", opts)
 keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-p>", ":Files<CR>", opts)
 keymap("n", "<C-g>", ":Rg<CR>", opts)
