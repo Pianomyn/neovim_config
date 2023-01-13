@@ -2,12 +2,12 @@
 -- LSP Config
 local lspconfig = require("lspconfig")
 
-local on_attach = function(client, bufnr)
+local on_attach = function(_, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-for key, value in pairs(required_language_servers) do
+for _, value in pairs(REQUIRED_LANGUAGE_SERVERS) do
     lspconfig[value].setup {
         on_attach = on_attach,
         capabilities = capabilities

@@ -1,7 +1,9 @@
-require("globals.lua")
+-- Default
+require("globals")
 require("install-plugins")
 require("general")
 
+-- Plugins
 require("plugins/mason")
 require("plugins/cmp")
 require("plugins/lsp")
