@@ -1,3 +1,4 @@
+require("globals.lua")
 require("install-plugins")
 require("general")
 

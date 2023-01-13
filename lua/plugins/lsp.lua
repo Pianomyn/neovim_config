@@ -1,6 +1,3 @@
-local server_list = {"pyright", "tsserver", "html"}
-
-
 -- ####################################################################################################################
 -- LSP Config
 local lspconfig = require("lspconfig")
@@ -10,7 +7,7 @@ local on_attach = function(client, bufnr)
 end
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-for key, value in pairs(server_list) do
+for key, value in pairs(required_language_servers) do
     lspconfig[value].setup {
         on_attach = on_attach,
         capabilities = capabilities

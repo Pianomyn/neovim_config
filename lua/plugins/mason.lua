@@ -1,6 +1,5 @@
-local server_list = {"pyright", "tsserver", "html"}
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = server_list,
+    ensure_installed = required_language_servers,
   automatic_installation = true,
 })
