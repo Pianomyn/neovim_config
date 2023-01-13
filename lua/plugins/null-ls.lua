@@ -1,6 +1,6 @@
 local null_ls = require("null-ls")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-local pyproject_path = "~/.config/nvim/configs/pyproject.toml"
+local pyproject_path = vim.fn.expand("~/.config/nvim/configs/pyproject.toml")
 
 null_ls.setup({
 	sources = {
