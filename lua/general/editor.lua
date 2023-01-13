@@ -1,10 +1,10 @@
 vim.lsp.set_log_level("off")
-vim.opt.completeopt = {"menu", "menuone"} 
+vim.opt.completeopt = { "menu", "menuone" }
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.wildignore = {"__pycache__", "volumes"} 
+vim.opt.wildignore = { "__pycache__", "volumes" }
 vim.opt.cursorline = true
 
 vim.wo.colorcolumn = "80,120"
