@@ -9,6 +9,7 @@ vim.opt.cursorline = true
 
 vim.wo.colorcolumn = "80,120"
 
+--vim.cmd("silent! colorscheme onenord")
 vim.cmd("silent! colorscheme nord")
 --vim.cmd("silent! colorscheme codedark")
 vim.cmd("set encoding=utf-8")

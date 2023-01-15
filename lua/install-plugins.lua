@@ -103,6 +103,7 @@ return packer.startup(function(use)
 	use("rafi/awesome-vim-colorschemes")
 	use("tomasiser/vim-code-dark")
 	use("shaunsingh/nord.nvim")
+	use("rmehri01/onenord.nvim")
 
 	if packer_bootstrap then
 		packer.sync()
