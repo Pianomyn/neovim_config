@@ -15,6 +15,7 @@ vim.cmd("silent! colorscheme nord")
 vim.cmd("set encoding=utf-8")
 vim.cmd("set hlsearch")
 
+vim.cmd("set mouse=a")
 vim.cmd("set expandtab")
 vim.cmd("set autoindent")
 vim.cmd("set smarttab")

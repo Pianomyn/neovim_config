@@ -15,4 +15,3 @@ require("plugins/blamer")
 require("plugins/indent-blankline")
 require("plugins/illuminate")
 require("plugins/null-ls")
-
