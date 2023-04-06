@@ -10,8 +10,8 @@ keymap("n", "<C-p>", ":Files<CR>", opts)
 keymap("n", "<C-g>", ":Rg<CR>", opts)
 
 -- File navigation
-keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
-keymap("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts)
+keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) -- Jump to definition
+keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Open definition in new tab
 
 -- Git
 keymap("n", "gb", ":BlamerToggle<CR>", opts)
