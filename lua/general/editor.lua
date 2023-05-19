@@ -12,6 +12,7 @@ vim.wo.colorcolumn = "80,120"
 --vim.cmd("silent! colorscheme nord")
 --vim.cmd("silent! colorscheme onenord")
 vim.cmd("silent! colorscheme codedark")
+vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 
 vim.cmd("set encoding=utf-8")
 vim.cmd("set hlsearch")
