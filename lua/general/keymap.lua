@@ -11,9 +11,10 @@ keymap("n", "<C-g>", ":Rg<CR>", opts)
 
 -- File navigation
 keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) -- Jump to definition
+keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Jump to definition in new tab
+keymap("n", "gdv", "<C-w>v<C-w>lgD", opts) -- Open definition in new vertical split screen
 keymap("n", "gr", ":lua vim.lsp.buf.references()<CR>", opts) -- Open references
-keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Open definition in new tab
-keymap("n", "gdv", "<C-w>v<C-w>lgD", opts) -- Open definition in new tab
+keymap("n", "ts", ":tab split<CR>", opts) -- Duplicate current tab
 
 -- Git
 keymap("n", "gb", ":BlamerToggle<CR>", opts)
