@@ -13,7 +13,7 @@ vim.wo.colorcolumn = "80,120"
 --vim.cmd("silent! colorscheme onenord")
 --vim.cmd("silent! colorscheme vscode") -- lua
 vim.cmd("silent! colorscheme codedark") -- vimscript
-vim.cmd("hi TabLineSel guibg=#569CD6 guifg=#9CDCFE")
+vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
 --vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 
 vim.cmd("set encoding=utf-8")
