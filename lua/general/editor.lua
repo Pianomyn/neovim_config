@@ -11,8 +11,10 @@ vim.wo.colorcolumn = "80,120"
 
 --vim.cmd("silent! colorscheme nord")
 --vim.cmd("silent! colorscheme onenord")
-vim.cmd("silent! colorscheme codedark")
-vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
+--vim.cmd("silent! colorscheme vscode") -- lua
+vim.cmd("silent! colorscheme codedark") -- vimscript
+vim.cmd("hi TabLineSel guibg=#569CD6 guifg=#9CDCFE")
+--vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 
 vim.cmd("set encoding=utf-8")
 vim.cmd("set hlsearch")
@@ -25,8 +27,5 @@ vim.cmd("set tabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set splitbelow")
 
--- Colors / Themes
-vim.cmd("set termguicolors")
--- vim.cmd("hi TabLineSel ctermbg=100 guibg=1")
 -- vim.opt.pumheight = 10
 -- vim.opt.cmdheight= 2

@@ -102,6 +102,7 @@ return packer.startup(function(use)
 	-- Colors, Themes
 	use("rafi/awesome-vim-colorschemes")
 	use("tomasiser/vim-code-dark")
+	use("Mofiqul/vscode.nvim")
 	use("shaunsingh/nord.nvim")
 	use("rmehri01/onenord.nvim")
 
