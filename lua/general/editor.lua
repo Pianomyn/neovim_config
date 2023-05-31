@@ -9,14 +9,14 @@ vim.opt.cursorline = true
 
 vim.wo.colorcolumn = "80,120"
 
---vim.cmd("silent! colorscheme nord")
---vim.cmd("silent! colorscheme onenord")
---vim.cmd("silent! colorscheme vscode") -- lua
+-- vim.cmd("silent! colorscheme nord")
+-- vim.cmd("silent! colorscheme onenord")
+-- vim.cmd("silent! colorscheme vscode") -- lua
 vim.cmd("silent! colorscheme codedark") -- vimscript
 vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
---vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
+-- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 
-vim.opt.encoding = "utf-8"
+-- vim.opt.encoding = "utf-8"
 vim.opt.hlsearch = true
 
 -- vim.opt.mouse = ""
