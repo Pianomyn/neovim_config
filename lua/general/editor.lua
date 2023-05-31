@@ -16,16 +16,21 @@ vim.cmd("silent! colorscheme codedark") -- vimscript
 vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
 --vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 
-vim.cmd("set encoding=utf-8")
-vim.cmd("set hlsearch")
+vim.opt.encoding = "utf-8"
+vim.opt.hlsearch = true
 
-vim.cmd("set mouse=a")
-vim.cmd("set expandtab")
-vim.cmd("set autoindent")
-vim.cmd("set smarttab")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set splitbelow")
+-- vim.opt.mouse = ""
+
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+vim.opt.autoindent = true
+vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
+vim.opt.tabstop = 2 -- Number of spaces a tab character looks like
+vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
+vim.opt.splitbelow = true
+
+
+--vim.cmd("set splitbelow")
 
 -- vim.opt.pumheight = 10
 -- vim.opt.cmdheight= 2

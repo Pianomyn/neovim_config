@@ -1,5 +1,5 @@
 REQUIRED_LANGUAGE_SERVERS = {
-  "clangd",
+	"clangd",
 	"pyright",
 	"tsserver",
 	"html",
@@ -9,11 +9,11 @@ REQUIRED_LANGUAGE_SERVERS = {
 }
 
 REQUIRED_LINTERS_FORMATTERS = {
-  "cpplint", -- C/C++ Linter
-  "clang-format", -- C/C++ Formatter
+	"cpplint", -- C/C++ Linter
+	"clang-format", -- C/C++ Formatter
 	"isort", -- Python Formatter
 	"black", -- Python Formatter
-  "autoflake", -- Python Formatter: Removes unused imports and variables
+	"autoflake", -- Python Formatter: Removes unused imports and variables
 	"prettier", -- JS Formatter
 	"stylua", -- Lua Formatter
 }
