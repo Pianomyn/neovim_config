@@ -4,6 +4,8 @@ local pyproject_path = vim.fn.expand("~/.config/nvim/configs/pyproject.toml")
 
 null_ls.setup({
 	sources = {
+    null_ls.builtins.formatting.clang_format,
+    null_ls.builtins.formatting.autoflake,
 		null_ls.builtins.formatting.isort.with({
 			extra_args = {
 				"--settings-path",
