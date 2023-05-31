@@ -8,7 +8,12 @@ null_ls.setup({
 		null_ls.builtins.diagnostics.cpplint,
 		null_ls.builtins.diagnostics.flake8,
 		null_ls.builtins.formatting.clang_format,
-		null_ls.builtins.formatting.autoflake,
+		null_ls.builtins.formatting.autoflake.with({
+			extra_args = {
+				"--remove-all-unused-imports",
+				"--remove-unused-variables",
+			},
+		}),
 		null_ls.builtins.formatting.isort.with({
 			extra_args = {
 				"--settings-path",
