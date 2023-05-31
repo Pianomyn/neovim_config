@@ -1,6 +1,11 @@
 -- ####################################################################################################################
 -- LSP Config
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.offsetEncoding = "utf-8"
 local lspconfig = require("lspconfig")
+lspconfig.clangd.setup({
+	capabilities = capabilities,
+})
 
 local on_attach = function(_, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")

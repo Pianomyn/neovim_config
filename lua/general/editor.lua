@@ -1,3 +1,12 @@
+local notify = vim.notify
+vim.notify = function(msg, ...)
+	if msg:match("warning: multiple different client offset_encodings") then
+		return
+	end
+
+	notify(msg, ...)
+end
+
 vim.lsp.set_log_level("off")
 vim.opt.completeopt = { "menu", "menuone" }
 vim.opt.termguicolors = true
@@ -16,7 +25,7 @@ vim.cmd("silent! colorscheme codedark") -- vimscript
 vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
 -- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 
--- vim.opt.encoding = "utf-8"
+vim.opt.encoding = "utf-8"
 vim.opt.hlsearch = true
 
 -- vim.opt.mouse = ""

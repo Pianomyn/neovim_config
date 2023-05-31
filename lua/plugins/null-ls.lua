@@ -5,8 +5,10 @@ local stylua_path = vim.fn.expand("~/.config/nvim/configs/stylua.toml")
 
 null_ls.setup({
 	sources = {
-    null_ls.builtins.formatting.clang_format,
-    null_ls.builtins.formatting.autoflake,
+		null_ls.builtins.diagnostics.cpplint,
+		null_ls.builtins.diagnostics.flake8,
+		null_ls.builtins.formatting.clang_format,
+		null_ls.builtins.formatting.autoflake,
 		null_ls.builtins.formatting.isort.with({
 			extra_args = {
 				"--settings-path",
@@ -20,12 +22,10 @@ null_ls.setup({
 			},
 		}),
 		null_ls.builtins.formatting.prettier,
-		null_ls.builtins.formatting.stylua.with(
-      {
-        "--config-path",
-        stylua_path,
-      }
-    ),
+		null_ls.builtins.formatting.stylua.with({
+			"--config-path",
+			stylua_path,
+		}),
 	},
 	-- you can reuse a shared lspconfig on_attach callback here
 	on_attach = function(client, bufnr)
