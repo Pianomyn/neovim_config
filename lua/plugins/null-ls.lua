@@ -6,7 +6,12 @@ local stylua_path = vim.fn.expand("~/.config/nvim/configs/stylua.toml")
 null_ls.setup({
 	sources = {
 		null_ls.builtins.diagnostics.cpplint,
-		null_ls.builtins.diagnostics.flake8,
+		null_ls.builtins.diagnostics.flake8.with({
+			extra_args = {
+				"--max-line-length",
+				"120",
+			},
+		}),
 		null_ls.builtins.formatting.clang_format,
 		null_ls.builtins.formatting.autoflake.with({
 			extra_args = {
