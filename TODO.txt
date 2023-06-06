@@ -1,4 +1,0 @@
-switch from lsp-config to mason-lspconfig (server setup)
-install mason-null-ls (ensure installs of formatters as 
-mason-lspconfig only installs lsp servers)
-
