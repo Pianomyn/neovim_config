@@ -5,6 +5,7 @@ require("general")
 
 -- Plugins
 require("plugins/mason")
+require("plugins/fzf")
 require("plugins/cmp")
 require("plugins/lsp")
 require("plugins/nvim-tree")

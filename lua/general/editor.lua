@@ -37,9 +37,3 @@ vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
 vim.opt.tabstop = 2 -- Number of spaces a tab character looks like
 vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
 vim.opt.splitbelow = true
-
-
---vim.cmd("set splitbelow")
-
--- vim.opt.pumheight = 10
--- vim.opt.cmdheight= 2
