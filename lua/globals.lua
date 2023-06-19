@@ -6,6 +6,7 @@ REQUIRED_LANGUAGE_SERVERS = {
 	"cssls",
 	"lua_ls",
 	"marksman",
+  "kotlin_language_server",
 }
 
 REQUIRED_LINTERS_FORMATTERS = {
@@ -17,6 +18,7 @@ REQUIRED_LINTERS_FORMATTERS = {
 	"autoflake", -- Python Formatter: Removes unused imports and variables
 	"prettier", -- JS Formatter
 	"stylua", -- Lua Formatter
+  "ktlint", -- Kotlin
 }
 
 REQUIRED_GRAMMARS = {
@@ -28,4 +30,5 @@ REQUIRED_GRAMMARS = {
 	"css",
 	"lua",
 	"sql",
+  "kotlin",
 }
