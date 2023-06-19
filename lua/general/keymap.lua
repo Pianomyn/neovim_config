@@ -1,6 +1,9 @@
 local keymap = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
 
+-- General
+keymap("i", "jk", "<Esc>", opts)
+
 -- File directory
 keymap("n", "<C-t>", ":tabnew<CR>", opts)
 keymap("n", "<S-h>", ":tabp<CR>", opts)
