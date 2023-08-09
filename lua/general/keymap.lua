@@ -1,8 +1,16 @@
-local keymap = vim.api.nvim_set_keymap
-local opts = {noremap = true, silent = true}
+local keymap = vim.keymap.set
+local opts = { noremap = true, silent = true }
 
 -- General
 keymap("i", "jk", "<Esc>", opts)
+
+-- Refactor
+keymap("x", "<leader>re", ":Refactor extract<CR>", opts)
+keymap("x", "<leader>rf", ":Refactor extract_to_file<CR>", opts)
+keymap("x", "<leader>rv", ":Refactor extract_var<CR>", opts)
+keymap({ "n", "x" }, "<leader>ri", ":Refactor inline_var<CR>", opts)
+keymap("n", "<leader>rb", ":Refactor extract_block<CR>", opts)
+keymap("n", "<leader>rbf", ":Refactor extract_block_to_file<CR>", opts)
 
 -- File directory
 keymap("n", "<C-t>", ":tabnew<CR>", opts)

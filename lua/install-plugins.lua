@@ -57,6 +57,13 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig")
 	use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim")
 	use("ray-x/lsp_signature.nvim")
+	use({
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+	})
 
 	-- Formatting and Linting
 	use({
