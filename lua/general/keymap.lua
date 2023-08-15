@@ -12,22 +12,21 @@ keymap({ "n", "x" }, "<leader>ri", ":Refactor inline_var<CR>", opts)
 keymap("n", "<leader>rb", ":Refactor extract_block<CR>", opts)
 keymap("n", "<leader>rbf", ":Refactor extract_block_to_file<CR>", opts)
 
--- File directory
+-- Tabs
 keymap("n", "<C-t>", ":tabnew<CR>", opts)
 keymap("n", "<S-h>", ":tabp<CR>", opts)
 keymap("n", "<S-l>", ":tabn<CR>", opts)
+keymap("n", "ts", ":tab split<CR>", opts) -- Duplicate current tab
+
+-- File navigation
 keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-p>", ":Files<CR>", opts)
 keymap("n", "<C-g>", ":Rg<CR>", opts)
-
--- File navigation
 keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) -- Jump to definition
 keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Jump to definition in new tab
-keymap("n", "gdv", ":vertical dsplit <C-R><C-w><CR>", opts) -- Open definition in new vertical split screen
-keymap("n", "gds", "<C-w>d", opts) -- Open definition in new horizontal split screen
---keymap("n", "gdv", "<C-w>v<C-w>lgd<CR>", opts) -- Open definition in new vertical split screen
+--keymap("n", "gdv", ":vertical dsplit <C-R><C-w><CR>", opts) -- Open definition in new vertical split screen
+--keymap("n", "gds", "<C-w>d", opts) -- Open definition in new horizontal split screen
 keymap("n", "gr", ":lua vim.lsp.buf.references()<CR>", opts) -- Open references
-keymap("n", "ts", ":tab split<CR>", opts) -- Duplicate current tab
 
 -- Git
 keymap("n", "gb", ":BlamerToggle<CR>", opts)
