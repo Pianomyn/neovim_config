@@ -15,8 +15,8 @@ keymap("n", "<leader>rbf", ":Refactor extract_block_to_file<CR>", opts)
 -- Tabs
 keymap("n", "<S-h>", ":BufferPrevious<CR>", opts)
 keymap("n", "<S-l>", ":BufferNext<CR>", opts)
-keymap("n", "<C-w>", ":BufferClose<CR>", opts)
-keymap("n", "<C-q>", ":BufferClose!<CR>", opts)
+keymap("n", "<Leader>w", ":BufferClose<CR>", opts)
+keymap("n", "<Leader>q", ":BufferClose!<CR>", opts)
 keymap("n", "<C-t>", ":tabnew<CR>", opts)
 keymap("n", "ts", ":tab split<CR>", opts) -- Duplicate current tab
 
