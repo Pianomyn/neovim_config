@@ -24,7 +24,6 @@ keymap("n", "ts", ":tab split<CR>", opts) -- Duplicate current tab
 keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-p>", ":Files<CR>", opts)
 keymap("n", "<C-g>", ":Rg<CR>", opts)
-keymap("n", "bf", ":ls<CR>", opts) -- List all open buffers
 keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) -- Jump to definition
 keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Jump to definition in new tab
 --keymap("n", "gdv", ":vertical dsplit <C-R><C-w><CR>", opts) -- Open definition in new vertical split screen
