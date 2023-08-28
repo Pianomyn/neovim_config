@@ -12,7 +12,7 @@ vim.opt.completeopt = { "menu", "menuone" }
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
 vim.opt.cursorline = true
 
@@ -27,7 +27,7 @@ vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
 
 vim.opt.encoding = "utf-8"
 vim.opt.hlsearch = true
-vim.cmd("set guitablabel=\\[%N\\]\\ %t\\ %M")
+-- vim.cmd("set guitablabel=\\[%N\\]\\ %t\\ %M")
 --vim.cmd("set guitablabel=%t\\ %m")
 -- vim.opt.mouse = ""
 
