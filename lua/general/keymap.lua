@@ -25,7 +25,7 @@ keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-p>", ":Files<CR>", opts)
 keymap("n", "<C-g>", ":Rg<CR>", opts)
 keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) -- Jump to definition
-keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Jump to definition in new tab
+-- keymap("n", "gD", "<C-w><C-]><C-w>T", opts) -- Jump to definition in new tab
 --keymap("n", "gdv", ":vertical dsplit <C-R><C-w><CR>", opts) -- Open definition in new vertical split screen
 --keymap("n", "gds", "<C-w>d", opts) -- Open definition in new horizontal split screen
 keymap("n", "gr", ":lua vim.lsp.buf.references()<CR>", opts) -- Open references
