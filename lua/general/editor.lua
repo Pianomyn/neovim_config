@@ -15,6 +15,7 @@ vim.opt.number = true
 -- vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
 vim.opt.cursorline = true
+vim.opt.clipboard="unnamedplus"
 
 vim.wo.colorcolumn = "80,120"
 
