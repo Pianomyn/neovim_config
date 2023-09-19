@@ -113,6 +113,7 @@ return packer.startup(function(use)
 	use("Mofiqul/vscode.nvim")
 	use("shaunsingh/nord.nvim")
 	use("rmehri01/onenord.nvim")
+	use("ellisonleao/gruvbox.nvim")
 
 	if packer_bootstrap then
 		packer.sync()

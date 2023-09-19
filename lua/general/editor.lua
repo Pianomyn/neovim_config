@@ -21,6 +21,7 @@ vim.wo.colorcolumn = "80,120"
 
 -- vim.cmd("silent! colorscheme nord")
 -- vim.cmd("silent! colorscheme onenord")
+-- vim.cmd("silent! colorscheme gruvbox")
 -- vim.cmd("silent! colorscheme vscode") -- lua
 vim.cmd("silent! colorscheme codedark") -- vimscript
 vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
