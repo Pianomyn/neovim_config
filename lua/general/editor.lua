@@ -7,7 +7,7 @@ vim.notify = function(msg, ...)
 	notify(msg, ...)
 end
 
-vim.lsp.set_log_level("off")
+vim.lsp.set_log_level("debug")
 vim.opt.completeopt = { "menu", "menuone" }
 vim.opt.termguicolors = true
 vim.opt.background = "dark"

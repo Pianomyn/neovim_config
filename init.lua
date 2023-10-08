@@ -1,7 +1,6 @@
 -- Default
 require("globals")
 require("install-plugins")
-require("general")
 
 -- Plugins
 require("plugins/mason")
@@ -18,3 +17,4 @@ require("plugins/illuminate")
 require("plugins/null-ls")
 require("plugins/refactoring")
 require("plugins/barbar")
+require("general")
