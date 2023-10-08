@@ -10,13 +10,12 @@ end
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, value in pairs(REQUIRED_LANGUAGE_SERVERS) do
-  if value ~= "jdtls" then
-    print(value)
+  --if value ~= "jdtls" then
     lspconfig[value].setup({
       on_attach = on_attach,
       capabilities = capabilities,
     })
-  end
+  --end
 end
 require("jdtls")
 
