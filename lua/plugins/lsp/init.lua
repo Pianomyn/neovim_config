@@ -10,14 +10,15 @@ end
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, value in pairs(REQUIRED_LANGUAGE_SERVERS) do
-  --if not value == "jdtls" then
+  if value ~= "jdtls" then
+    print(value)
     lspconfig[value].setup({
       on_attach = on_attach,
       capabilities = capabilities,
-      root_dir = lspconfig.util.root_pattern("pom.xml", "build.gradle", ".git") or vim.fn.getcwd(),
     })
-  --end
+  end
 end
+require("jdtls")
 
 vim.api.nvim_command([[ hi def link LspReferenceText CursorLine ]])
 vim.api.nvim_command([[ hi def link LspReferenceWrite CursorLine ]])

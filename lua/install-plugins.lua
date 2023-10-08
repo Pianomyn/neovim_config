@@ -67,7 +67,6 @@ return packer.startup(function(use)
 	})
 	use({
 		"mfussenegger/nvim-jdtls",
-		ft = { "java" },
 	})
 
 	-- Formatting and Linting
