@@ -5,6 +5,7 @@ REQUIRED_LANGUAGE_SERVERS = {
   "tsserver",
   "html",
   "cssls",
+  "vuels",
   "lua_ls",
   "marksman",
 }

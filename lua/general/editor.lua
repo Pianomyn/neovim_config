@@ -15,7 +15,7 @@ vim.opt.number = true
 -- vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
 vim.opt.cursorline = true
-vim.opt.clipboard="unnamedplus"
+-- vim.opt.clipboard="unnamedplus" -- Vim will use the same register as the OS for copy/paste
 
 vim.wo.colorcolumn = "80,120"
 
