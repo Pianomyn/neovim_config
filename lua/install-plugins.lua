@@ -29,7 +29,7 @@ return packer.startup(function(use)
 	-- Packer
 	use("wbthomason/packer.nvim")
 
-	-- Package Installer
+	-- LSP and linter/formatter Installer
 	use({
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
