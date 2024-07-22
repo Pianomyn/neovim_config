@@ -31,15 +31,15 @@ vim.opt.splitbelow = true
 
 
 --vim.cmd.colorscheme "vscode" -- lua
-vim.cmd.colorscheme "nord"
---vim.cmd.colorscheme "gruvbox-material"
+--vim.cmd.colorscheme "nord"
+vim.cmd.colorscheme "gruvbox-material"
 
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "onenord"
---vim.cmd.colorscheme "codedark" -- vimscript
 --vim.cmd.colorscheme "gruvbox"
+--vim.cmd.colorscheme "codedark" -- vimscript
 --vim.cmd.colorscheme "everforest"
 
-vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
+-- vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
 -- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
 

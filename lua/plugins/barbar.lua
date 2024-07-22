@@ -33,7 +33,7 @@ require("barbar").setup({
 	-- Disable highlighting file icons in inactive buffers
 	highlight_inactive_file_icons = false,
 	-- Enable highlighting visible buffers
-	highlight_visible = true,
+	highlight_visible = false,
 
 	icons = {
 		-- Configure the base icons on the bufferline.
