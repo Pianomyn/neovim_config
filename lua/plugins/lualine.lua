@@ -1,12 +1,13 @@
-local base16 = require("lualine.themes.base16") -- command and normal same color
 local codedark = require("lualine.themes.codedark") -- command and normal same color
 local onedark = require("lualine.themes.onedark")
 local nord = require("lualine.themes.nord")
+local gruvbox_dark = require("lualine.themes.gruvbox_dark")
+local gruvbox_material = require("lualine.themes.gruvbox-material")
 
 require("lualine").setup({
 	options = {
 		icons_enabled = true,
-		theme = onedark,
+		theme = nord,
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {

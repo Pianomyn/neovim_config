@@ -118,6 +118,7 @@ return packer.startup(function(use)
 	use("ellisonleao/gruvbox.nvim")
 	use("AlexvZyl/nordic.nvim")
 	use("sainnhe/everforest")
+	use("sainnhe/gruvbox-material")
 
 	if packer_bootstrap then
 		packer.sync()

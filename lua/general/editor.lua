@@ -30,13 +30,14 @@ vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
 vim.opt.splitbelow = true
 
 
-vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "vscode" -- lua
+vim.cmd.colorscheme "nordic"
+--vim.cmd.colorscheme "gruvbox-material"
 
 --vim.cmd.colorscheme "nord"
 --vim.cmd.colorscheme "onenord"
 --vim.cmd.colorscheme "codedark" -- vimscript
---vim.cmd.colorscheme "gruvbox" -- vimscript
+--vim.cmd.colorscheme "gruvbox"
 --vim.cmd.colorscheme "everforest"
 
 vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
