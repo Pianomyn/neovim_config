@@ -31,10 +31,10 @@ vim.opt.splitbelow = true
 
 
 --vim.cmd.colorscheme "vscode" -- lua
-vim.cmd.colorscheme "nordic"
+--vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "gruvbox-material"
 
---vim.cmd.colorscheme "nord"
+vim.cmd.colorscheme "nord"
 --vim.cmd.colorscheme "onenord"
 --vim.cmd.colorscheme "codedark" -- vimscript
 --vim.cmd.colorscheme "gruvbox"
