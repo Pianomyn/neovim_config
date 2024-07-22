@@ -111,12 +111,13 @@ return packer.startup(function(use)
 	})
 
 	-- Colors, Themes
-	use("rafi/awesome-vim-colorschemes")
 	use("tomasiser/vim-code-dark")
 	use("Mofiqul/vscode.nvim")
 	use("shaunsingh/nord.nvim")
 	use("rmehri01/onenord.nvim")
 	use("ellisonleao/gruvbox.nvim")
+	use("AlexvZyl/nordic.nvim")
+	use("sainnhe/everforest")
 
 	if packer_bootstrap then
 		packer.sync()

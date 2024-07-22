@@ -15,23 +15,11 @@ vim.opt.number = true
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
 vim.opt.cursorline = true
--- vim.opt.clipboard="unnamedplus" -- Vim will use the same register as the OS for copy/paste
-
+vim.opt.clipboard="unnamedplus" -- Vim will use the same register as the OS for copy/paste
 vim.wo.colorcolumn = "80,120"
-
---vim.cmd("silent! colorscheme nord")
---vim.cmd("silent! colorscheme onenord")
-vim.cmd("silent! colorscheme vscode") -- lua
---vim.cmd("silent! colorscheme codedark") -- vimscript
---vim.cmd("silent! colorscheme gruvbox")
-vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
--- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
-
 vim.opt.encoding = "utf-8"
 vim.opt.hlsearch = true
--- vim.cmd("set guitablabel=\\[%N\\]\\ %t\\ %M")
---vim.cmd("set guitablabel=%t\\ %m")
--- vim.opt.mouse = ""
+
 
 vim.opt.expandtab = true
 vim.opt.smarttab = true
@@ -40,3 +28,17 @@ vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
 vim.opt.tabstop = 2 -- Number of spaces a tab character looks like
 vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
 vim.opt.splitbelow = true
+
+
+vim.cmd.colorscheme "nordic"
+--vim.cmd.colorscheme "vscode" -- lua
+
+--vim.cmd.colorscheme "nord"
+--vim.cmd.colorscheme "onenord"
+--vim.cmd.colorscheme "codedark" -- vimscript
+--vim.cmd.colorscheme "gruvbox" -- vimscript
+--vim.cmd.colorscheme "everforest"
+
+vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
+-- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
+
