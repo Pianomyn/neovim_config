@@ -15,11 +15,10 @@ vim.opt.number = true
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
 vim.opt.cursorline = true
-vim.opt.clipboard="unnamedplus" -- Vim will use the same register as the OS for copy/paste
+vim.opt.clipboard = "unnamedplus" -- Vim will use the same register as the OS for copy/paste
 vim.wo.colorcolumn = "80,120"
 vim.opt.encoding = "utf-8"
 vim.opt.hlsearch = true
-
 
 vim.opt.expandtab = true
 vim.opt.smarttab = true
@@ -29,10 +28,9 @@ vim.opt.tabstop = 2 -- Number of spaces a tab character looks like
 vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
 vim.opt.splitbelow = true
 
-
 --vim.cmd.colorscheme "vscode" -- lua
 --vim.cmd.colorscheme "nord"
-vim.cmd.colorscheme "gruvbox-material"
+vim.cmd.colorscheme("gruvbox-material")
 
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "onenord"
@@ -42,4 +40,3 @@ vim.cmd.colorscheme "gruvbox-material"
 
 -- vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
 -- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")
-

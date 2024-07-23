@@ -44,7 +44,6 @@ return packer.startup(function(use)
 		},
 	})
 	use("nvim-lualine/lualine.nvim")
-	use("romgrk/barbar.nvim")
 	use({
 		"junegunn/fzf.vim",
 		requires = {
