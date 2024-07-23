@@ -7,15 +7,16 @@ local opts = { noremap = true, silent = true }
 keymap("i", "jk", "<Esc>", opts)
 
 -- Buffers, Tabs and Windows
-keymap("n", "<S-h>", ":tabprevious<CR>", opts)
-keymap("n", "<S-l>", ":tabnext<CR>", opts)
-keymap("n", "tn", ":tabnew<CR>", opts)
-keymap("n", "th", ":split<CR>", opts)
-keymap("n", "tv", ":vsplit<CR>", opts)
-
 keymap("n", "bl", ":buffers<CR>", opts)
 keymap("n", "bo", keymap_functions.switch_to_buffer_by_number, opts)
 keymap("n", "bd", keymap_functions.delete_buffer_by_number, opts)
+
+keymap("n", "wh", ":split<CR>", opts)
+keymap("n", "wv", ":vsplit<CR>", opts)
+
+keymap("n", "<S-h>", ":tabprevious<CR>", opts)
+keymap("n", "<S-l>", ":tabnext<CR>", opts)
+keymap("n", "<C-t>", ":tabnew<CR>", opts)
 
 -- File navigation
 keymap("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
