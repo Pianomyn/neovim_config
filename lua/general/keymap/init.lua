@@ -7,9 +7,9 @@ local opts = { noremap = true, silent = true }
 keymap("i", "jk", "<Esc>", opts)
 
 -- Buffers, Tabs and Windows
-keymap("n", "bl", ":buffers<CR>", opts)
-keymap("n", "bo", keymap_functions.switch_to_buffer_by_number, opts)
-keymap("n", "bd", keymap_functions.delete_buffer_by_number, opts)
+keymap("n", "<Leader>bl", ":buffers<CR>", opts)
+keymap("n", "<Leader>bo", keymap_functions.switch_to_buffer_by_number, opts)
+keymap("n", "<Leader>bd", keymap_functions.delete_buffer_by_number, opts)
 
 keymap("n", "<Leader>wh", ":split<CR>", opts)
 keymap("n", "<Leader>wv", ":vsplit<CR>", opts)
@@ -34,12 +34,12 @@ keymap("n", "<Leader>dvo", ":DiffviewOpen<CR>", opts)
 keymap("n", "<Leader>dvc", ":DiffviewClose<CR>", opts)
 
 -- Refactor
-keymap("x", "<leader>re", ":Refactor extract<CR>", opts)
-keymap("x", "<leader>rf", ":Refactor extract_to_file<CR>", opts)
-keymap("x", "<leader>rv", ":Refactor extract_var<CR>", opts)
-keymap({ "n", "x" }, "<leader>ri", ":Refactor inline_var<CR>", opts)
-keymap("n", "<leader>rb", ":Refactor extract_block<CR>", opts)
-keymap("n", "<leader>rbf", ":Refactor extract_block_to_file<CR>", opts)
+keymap("x", "<Leader>re", ":Refactor extract<CR>", opts)
+keymap("x", "<Leader>rf", ":Refactor extract_to_file<CR>", opts)
+keymap("x", "<Leader>rv", ":Refactor extract_var<CR>", opts)
+keymap({ "n", "x" }, "<Leader>ri", ":Refactor inline_var<CR>", opts)
+keymap("n", "<Leader>rb", ":Refactor extract_block<CR>", opts)
+keymap("n", "<Leader>rbf", ":Refactor extract_block_to_file<CR>", opts)
 
 -- Diagnostics
 keymap("n", "<Leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
