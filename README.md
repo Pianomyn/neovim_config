@@ -6,4 +6,5 @@ What did you just say about me, you Vim user? I'll have you know I've mastered N
 
 
 # TODO
-- Review autocmds
+- Review startup time (1.6s)
+    - Review autocmds
