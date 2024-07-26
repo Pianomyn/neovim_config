@@ -1,3 +1,4 @@
+local dependencies = require("utils.dependencies")
 -- ####################################################################################################################
 -- LSP Config
 -- local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -9,7 +10,7 @@ local on_attach = function(_, bufnr)
 end
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-for _, value in pairs(REQUIRED_LANGUAGE_SERVERS) do
+for _, value in pairs(dependencies.required_language_servers) do
 	--if value ~= "jdtls" then
 	lspconfig[value].setup({
 		on_attach = on_attach,
