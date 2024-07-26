@@ -1,4 +1,4 @@
-local theme_mapping = require("appearance/theme_mapping")
+local theme_mapping = require("appearance.theme_mapping")
 
 vim.opt.termguicolors = true
 vim.opt.background = "dark"

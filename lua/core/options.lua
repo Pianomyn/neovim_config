@@ -8,7 +8,6 @@ vim.notify = function(msg, ...)
 end
 
 vim.lsp.set_log_level("debug")
-vim.opt.completeopt = { "menu", "menuone" }
 vim.opt.number = true
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }

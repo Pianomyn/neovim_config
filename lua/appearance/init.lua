@@ -1,2 +1,2 @@
-require("appearance/theme_mapping")
-require("appearance/appearance")
+require("appearance.theme_mapping")
+require("appearance.appearance")

@@ -1,9 +1,3 @@
-local codedark = require("lualine.themes.codedark") -- command and normal same color
-local onedark = require("lualine.themes.onedark")
-local nord = require("lualine.themes.nord")
-local gruvbox_dark = require("lualine.themes.gruvbox_dark")
-local gruvbox_material = require("lualine.themes.gruvbox-material")
-
 local appearance = require("appearance.appearance")
 
 require("lualine").setup({

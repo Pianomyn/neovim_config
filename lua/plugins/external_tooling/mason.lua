@@ -1,4 +1,4 @@
-local dependencies = require("utils/dependencies")
+local dependencies = require("utils.dependencies")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
