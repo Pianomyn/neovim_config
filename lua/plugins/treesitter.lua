@@ -1,5 +1,18 @@
+local required_grammars = {
+	"cpp",
+	"python",
+	"javascript",
+	"typescript",
+	"html",
+	"css",
+	"lua",
+	"sql",
+	"java",
+	"kotlin",
+}
+
 require("nvim-treesitter.configs").setup({
-	ensure_installed = REQUIRED_GRAMMARS,
+	ensure_installed = required_grammars,
 	highlight = {
 		enable = true,
 	},

@@ -21,28 +21,3 @@ REQUIRED_LINTERS_FORMATTERS = {
 	"stylua", -- Lua Formatter
 }
 
-REQUIRED_GRAMMARS = {
-	"cpp",
-	"python",
-	"javascript",
-	"typescript",
-	"html",
-	"css",
-	"lua",
-	"sql",
-	"java",
-	"kotlin",
-}
-
-COLOR_SCHEME_TO_LUALINE_THEME = {
-	vscode = "codedark",
-	codedark = "codedark",
-	["gruvbox-material"] = "gruvbox-material",
-	gruvbox = "gruvbox_dark",
-	nordic = "nord",
-	nord = "nord",
-	onenord = "nord",
-	everforest = "onedark",
-}
-
-CURRENT_COLOR_SCHEME = "gruvbox-material"
