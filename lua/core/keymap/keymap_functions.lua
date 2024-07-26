@@ -1,14 +1,14 @@
 local M = {}
 
 function M.switch_to_buffer_by_number()
-  local buffer_number = vim.fn.input('Enter buffer number: ')
-  local bufnr = tonumber(buffer_number)
+	local buffer_number = vim.fn.input("Enter buffer number: ")
+	local bufnr = tonumber(buffer_number)
 
-  if bufnr and vim.fn.bufexists(bufnr) == 1 then
-    vim.cmd('buffer ' .. bufnr)
-  else
-    print('Buffer number ' .. buffer_number .. ' does not exist.')
-  end
+	if bufnr and vim.fn.bufexists(bufnr) == 1 then
+		vim.cmd("buffer " .. bufnr)
+	else
+		print("Buffer number " .. buffer_number .. " does not exist.")
+	end
 end
 
 function M.delete_buffer_by_number()
