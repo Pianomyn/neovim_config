@@ -1,4 +1,4 @@
-local keymap_functions = require("general.keymap.keymap_functions")
+local keymap_functions = require("core.keymap.keymap_functions")
 
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }

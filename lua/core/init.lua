@@ -1,2 +1,2 @@
-require("general/options")
-require("general/keymap")
+require("core/options")
+require("core/keymap")
