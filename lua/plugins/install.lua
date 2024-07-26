@@ -63,9 +63,6 @@ return packer.startup(function(use)
 			{ "nvim-treesitter/nvim-treesitter" },
 		},
 	})
-	use({
-		"mfussenegger/nvim-jdtls",
-	})
 
 	-- Formatting and Linting
 	use({

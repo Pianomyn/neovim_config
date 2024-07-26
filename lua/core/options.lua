@@ -7,7 +7,7 @@ vim.notify = function(msg, ...)
 	notify(msg, ...)
 end
 
-vim.lsp.set_log_level("debug")
+--vim.lsp.set_log_level("debug")
 vim.opt.number = true
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
