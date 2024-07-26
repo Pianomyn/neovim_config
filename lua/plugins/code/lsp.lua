@@ -87,4 +87,4 @@ require("lsp_signature").setup(cfg)
 -- LSP Diagnostic Toggler
 require("toggle_lsp_diagnostics").init({ start_on = true, underline = false })
 
---require("../ftplugin/java")
+require("utils.filetypes.java")

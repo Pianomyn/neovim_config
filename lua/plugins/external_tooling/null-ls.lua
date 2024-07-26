@@ -1,7 +1,7 @@
 local null_ls = require("null-ls")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-local pyproject_path = vim.fn.expand("~/.config/nvim/configs/pyproject.toml")
-local stylua_path = vim.fn.expand("~/.config/nvim/configs/stylua.toml")
+local pyproject_path = vim.fn.expand(vim.fn.stdpath("config") .. "configs/pyproject.toml")
+local stylua_path = vim.fn.expand(vim.fn.stdpath("config") .. "/configs/stylua.toml")
 
 null_ls.setup({
 	sources = {
