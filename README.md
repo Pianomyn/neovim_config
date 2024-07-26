@@ -3,3 +3,7 @@ What did you just say about me, you Vim user? I'll have you know I've mastered N
 ![neovim](https://github.com/Pianomyn/neovim_config/assets/61450295/b06d4fb0-3f4a-4842-98c7-d53e45921247)
 ![ripgrep](https://github.com/Pianomyn/neovim_config/assets/61450295/55d2624e-9533-4f89-9a39-e5e2ffa8b881)
 ![autocomplete](https://github.com/Pianomyn/neovim_config/assets/61450295/01958c22-0de4-4b9b-9e9a-811c7e5c34e6)
+
+
+# TODO
+- Review autocmds

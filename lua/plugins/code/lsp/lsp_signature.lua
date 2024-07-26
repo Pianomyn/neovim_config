@@ -1,32 +1,4 @@
-local dependencies = require("utils.dependencies")
--- ####################################################################################################################
--- LSP Config
--- local capabilities = vim.lsp.protocol.make_client_capabilities()
--- capabilities.offsetEncoding = "utf-8"
-local lspconfig = require("lspconfig")
-
-local on_attach = function(_, bufnr)
-	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-end
-local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-
-for _, value in pairs(dependencies.required_language_servers) do
-	--if value ~= "jdtls" then
-	lspconfig[value].setup({
-		on_attach = on_attach,
-		capabilities = capabilities,
-	})
-	--end
-end
-require("jdtls")
-
-vim.api.nvim_command([[ hi def link LspReferenceText CursorLine ]])
-vim.api.nvim_command([[ hi def link LspReferenceWrite CursorLine ]])
-vim.api.nvim_command([[ hi def link LspReferenceRead CursorLine ]])
-
--- ####################################################################################################################
--- LSP Signature
-cfg = {
+local cfg = {
 	debug = false, -- set to true to enable debug logging
 	log_path = vim.fn.stdpath("cache") .. "/lsp_signature.log", -- log dir when debug is on
 	-- default is  ~/.cache/nvim/lsp_signature.log
@@ -82,9 +54,3 @@ cfg = {
 
 -- recommended:
 require("lsp_signature").setup(cfg)
-
--- ####################################################################################################################
--- LSP Diagnostic Toggler
-require("toggle_lsp_diagnostics").init({ start_on = true, underline = false })
-
---require("utils.filetypes.java")
