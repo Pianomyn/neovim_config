@@ -2,6 +2,9 @@
 require("globals")
 require("install-plugins")
 
+
+require("appearance")
+
 -- Plugins
 require("plugins/mason")
 require("plugins/fzf")
@@ -16,4 +19,6 @@ require("plugins/indent-blankline")
 require("plugins/illuminate")
 require("plugins/null-ls")
 require("plugins/refactoring")
+
 require("general")
+

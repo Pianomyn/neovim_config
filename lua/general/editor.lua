@@ -9,8 +9,6 @@ end
 
 vim.lsp.set_log_level("debug")
 vim.opt.completeopt = { "menu", "menuone" }
-vim.opt.termguicolors = true
-vim.opt.background = "dark"
 vim.opt.number = true
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wildignore = { "__pycache__", "volumes" }
@@ -27,16 +25,3 @@ vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
 vim.opt.tabstop = 2 -- Number of spaces a tab character looks like
 vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
 vim.opt.splitbelow = true
-
---vim.cmd.colorscheme "vscode" -- lua
-vim.cmd.colorscheme "gruvbox-material"
---vim.cmd.colorscheme "nordic"
-
---vim.cmd.colorscheme "nord"
---vim.cmd.colorscheme "onenord"
---vim.cmd.colorscheme "gruvbox"
---vim.cmd.colorscheme "codedark" -- vimscript
---vim.cmd.colorscheme "everforest"
-
--- vim.cmd("hi TabLineSel guibg=#223e55 guifg=#9CDCFE")
--- vim.cmd("hi TabLineSel guifg=LightGreen guibg=DarkGreen ctermfg=LightGreen ctermbg=DarkGreen ")

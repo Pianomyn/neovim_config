@@ -4,10 +4,12 @@ local nord = require("lualine.themes.nord")
 local gruvbox_dark = require("lualine.themes.gruvbox_dark")
 local gruvbox_material = require("lualine.themes.gruvbox-material")
 
+local appearance = require("appearance.appearance")
+
 require("lualine").setup({
 	options = {
 		icons_enabled = true,
-		theme = gruvbox_material,
+		theme = appearance.lualine_theme,
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
