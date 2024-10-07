@@ -1,7 +1,7 @@
 local M = {}
 
 M.color_scheme_to_lualine_theme = {
-	vscode = "codedark",
+	vscode = "vscode",
 	codedark = "codedark",
 	["gruvbox-material"] = "gruvbox-material",
 	gruvbox = "gruvbox_dark",
@@ -11,6 +11,6 @@ M.color_scheme_to_lualine_theme = {
 	everforest = "onedark",
 }
 
-M.current_color_scheme = "gruvbox-material"
+M.current_color_scheme = "vscode"
 
 return M
