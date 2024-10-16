@@ -1,5 +1,6 @@
 local dependencies = require("utils.dependencies")
 
+print(vim.inspect(dependencies))
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = dependencies.required_language_servers,

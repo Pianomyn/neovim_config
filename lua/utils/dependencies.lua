@@ -10,6 +10,7 @@ M.required_language_servers = {
 	"vuels",
 	"lua_ls",
 	"marksman",
+  "gopls",
 }
 M.required_linters_formatters = {
 	"cpplint", -- C/C++ Linter
@@ -20,6 +21,7 @@ M.required_linters_formatters = {
 	"autoflake", -- Python Formatter: Removes unused imports and variables
 	"prettier", -- JS Formatter
 	"stylua", -- Lua Formatter
+	"golangci-lint", -- Go Linter
 }
 M.required_grammars = {
 	"cpp",
@@ -32,6 +34,7 @@ M.required_grammars = {
 	"sql",
 	"java",
 	"kotlin",
+  "go",
 }
 
 return M

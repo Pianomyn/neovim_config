@@ -13,6 +13,7 @@ local required_grammars = {
 
 require("nvim-treesitter.configs").setup({
 	ensure_installed = required_grammars,
+  sync_install = true,
 	highlight = {
 		enable = true,
 	},
