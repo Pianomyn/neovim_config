@@ -36,6 +36,7 @@ return packer.startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		"jayp0521/mason-null-ls.nvim",
 	})
+	use("mfussenegger/nvim-jdtls")
 
 	-- Editor
 	use({

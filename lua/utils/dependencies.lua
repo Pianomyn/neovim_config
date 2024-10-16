@@ -3,7 +3,6 @@ local M = {}
 M.required_language_servers = {
 	"clangd",
 	"pyright",
-	"jdtls", -- Gives formatting diagnostics
 	"ts_ls",
 	"html",
 	"cssls",

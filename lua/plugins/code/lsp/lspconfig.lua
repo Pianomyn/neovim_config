@@ -9,10 +9,16 @@ end
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, value in pairs(dependencies.required_language_servers) do
-	lspconfig[value].setup({
-		on_attach = on_attach,
-		capabilities = capabilities,
-	})
+	if value == "jdtls" then
+		lspconfig.jdtls.setup{
+			cmd = { "jdtls" }
+		}
+	else
+		lspconfig[value].setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+		})
+	end
 end
 
 vim.api.nvim_command([[ hi def link LspReferenceText CursorLine ]])
