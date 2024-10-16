@@ -4,7 +4,7 @@ M.required_language_servers = {
 	"clangd",
 	"pyright",
 	"jdtls", -- Gives formatting diagnostics
-	"tsserver",
+	"ts_ls",
 	"html",
 	"cssls",
 	"vuels",
