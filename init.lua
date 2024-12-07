@@ -1,3 +1,3 @@
+require("plugins")
 require("core")
 require("appearance")
-require("plugins")
