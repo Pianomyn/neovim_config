@@ -9,7 +9,7 @@ M.required_language_servers = {
 	"vuels",
 	"lua_ls",
 	"marksman",
-  "gopls",
+	"gopls",
 }
 M.required_linters_formatters = {
 	"cpplint", -- C/C++ Linter
@@ -33,7 +33,7 @@ M.required_grammars = {
 	"sql",
 	"java",
 	"kotlin",
-  "go",
+	"go",
 }
 
 return M
