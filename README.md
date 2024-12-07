@@ -3,11 +3,11 @@ What did you just say about me, you Vim user? I'll have you know I've mastered N
 ## About
 A simple editor/IDE setup for Java, Python, JS/TS, Go.
 
-The goal of this repo is to have a consistent and reproducible editor/IDE
-across multiple machines/environments.
+The goal of this repo is to allow me to have a consistent and reproducible
+editor/IDE across multiple machines/environments.
 
 ## Setup
-After downloading the repo
+After cloning the repo
 - Navigate to `setup/<OS>` and run `install.sh`
 - Run `nvim`
 
