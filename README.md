@@ -7,7 +7,7 @@ The goal of this repo is to have a consistent and reproducible editor/IDE
 across multiple machines/environments.
 
 ## Setup
-After downloading the repo,
+After downloading the repo
 - Navigate to `setup/<OS>` and run `install.sh`
 - Run `nvim`
 
