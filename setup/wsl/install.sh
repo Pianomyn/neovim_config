@@ -19,7 +19,7 @@ source ~/.zshrc
 
 pyenv install 3.9.0
 pyenv global 3.9.0
-python --version  # Check that Python 3.9 is installed
+python --version
 
 zsh ../../scripts/install_jdtls.sh
 

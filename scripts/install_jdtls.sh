@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Variables
 JDTLS_VERSION="latest"
 JDTLS_URL="http://download.eclipse.org/jdtls/snapshots/jdt-language-server-${JDTLS_VERSION}.tar.gz"
 INSTALL_DIR="/opt/jdtls"
@@ -37,6 +36,4 @@ chmod -R 755 "$INSTALL_DIR"
 # Done
 echo "JDTLS installed successfully in $INSTALL_DIR."
 echo "You can now configure your IDE or editor to use $INSTALL_DIR/bin/jdtls."
-
-exit 0
 
