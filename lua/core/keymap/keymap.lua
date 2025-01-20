@@ -11,9 +11,6 @@ keymap("n", "<Leader>bl", ":buffers<CR>", opts)
 keymap("n", "<Leader>bo", keymap_functions.switch_to_buffer_by_number, opts)
 keymap("n", "<Leader>bd", keymap_functions.delete_buffer_by_number, opts)
 
-keymap("n", "<Leader>wh", ":split<CR>", opts)
-keymap("n", "<Leader>wv", ":vsplit<CR>", opts)
-
 keymap("n", "<S-h>", ":tabprevious<CR>", opts)
 keymap("n", "<S-l>", ":tabnext<CR>", opts)
 keymap("n", "<C-t>", ":tabnew<CR>", opts)
