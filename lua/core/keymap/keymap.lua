@@ -7,8 +7,6 @@ local opts = { noremap = true, silent = true }
 keymap("i", "jk", "<Esc>", opts)
 
 -- [Default] Buffers, Tabs and Windows
-keymap("n", "<Leader>bl", ":buffers<CR>", opts)
-keymap("n", "<Leader>bo", keymap_functions.switch_to_buffer_by_number, opts)
 keymap("n", "<Leader>bd", keymap_functions.delete_buffer_by_number, opts)
 
 keymap("n", "<S-h>", ":tabprevious<CR>", opts)
