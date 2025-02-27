@@ -17,10 +17,11 @@ vim.wo.colorcolumn = "80,120"
 vim.opt.encoding = "utf-8"
 vim.opt.hlsearch = true
 
-vim.opt.expandtab = true
-vim.opt.smarttab = true
-vim.opt.autoindent = true
-vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting
+vim.opt.expandtab = true  -- Replace leading tabs with spaces when pressing "Tab"
+vim.opt.smarttab = true  -- Inserts tabs/spaces based on previous line
 vim.opt.tabstop = 2 -- Number of spaces a tab character looks like
-vim.opt.softtabstop = 2 -- Number of spaces inserted instead of a tab character
+vim.opt.softtabstop = 2 -- Number of spaces inserted when pressing Tab
+vim.opt.autoindent = true  -- Copies indentation from previous line
+vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting with S-< or S->
+
 vim.opt.splitbelow = true
