@@ -53,6 +53,13 @@ return packer.startup(function(use)
 
 	use("lukas-reineke/indent-blankline.nvim")
 	use("RRethy/vim-illuminate")
+  use {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+}
 
 	-- Language
 	use("neovim/nvim-lspconfig")
