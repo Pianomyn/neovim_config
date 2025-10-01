@@ -1,17 +1,16 @@
 local M = {}
 
-M.required_language_servers = {
+M.REQUIRED_LANGUAGE_SERVERS = {
 	"pyright",
 	"ts_ls",
 	"html",
 	"cssls",
-	"vuels",
 	"lua_ls",
 	"marksman",
 	"gopls",
 	"clangd",
 }
-M.required_linters_formatters = {
+M.REQUIRED_LINTERS_FORMATTERS = {
 	"flake8", -- Python Linter
 	"isort", -- Python Formatter
 	"black", -- Python Formatter
@@ -22,7 +21,7 @@ M.required_linters_formatters = {
 	"cpplint", -- C/C++ Linter
 	"clang-format", -- C/C++ Formatter
 }
-M.required_grammars = {
+M.REQUIRED_GRAMMARS = {
 	"python",
 	"javascript",
 	"typescript",

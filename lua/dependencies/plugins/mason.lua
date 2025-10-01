@@ -1,4 +1,4 @@
-local dependencies = require("utils.dependencies")
+local CONSTANTS = require("constants")
 
 require("mason").setup({
 	ui = {
@@ -37,10 +37,10 @@ require("mason").setup({
 	},
 })
 require("mason-lspconfig").setup({
-	ensure_installed = dependencies.required_language_servers,
+	ensure_installed = CONSTANTS.REQUIRED_LANGUAGE_SERVERS,
 	automatic_installation = true,
 })
 require("mason-null-ls").setup({
-	ensure_installed = dependencies.required_linters_formatters,
+	ensure_installed = CONSTANTS.REQUIRED_LINTERS_FORMATTERS,
 	automatic_installation = true,
 })
