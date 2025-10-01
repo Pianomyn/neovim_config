@@ -62,7 +62,6 @@ return packer.startup(function(use)
 }
 
 	-- Language
-	use("neovim/nvim-lspconfig")
 	use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim")
 	use("ray-x/lsp_signature.nvim")
 	use({
