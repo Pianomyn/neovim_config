@@ -31,8 +31,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- LSP and linter/formatter Installer
-    --use "nvimtools/none-ls.nvim"
-    use "jose-elias-alvarez/null-ls.nvim"
+  use "nvimtools/none-ls.nvim"
 	use({
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
@@ -75,7 +74,7 @@ return packer.startup(function(use)
 	})
 
 	-- Formatting and Linting
-use { 'mhartington/formatter.nvim' }
+  use "stevearc/conform.nvim"
   use 'mfussenegger/nvim-lint'
 
 	-- Autocomplete

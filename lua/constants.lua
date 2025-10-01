@@ -12,7 +12,7 @@ M.REQUIRED_LANGUAGE_SERVERS = {
 }
 M.REQUIRED_LINTERS = {
 	flake8 = "python", -- Python Linter
-	["golangci-lint"] = "go", -- Go Linter
+	["golangcilint"] = "go", -- Go Linter
 	cpplint = "cpp", -- C/C++ Linter
 }
 M.REQUIRED_FORMATTERS = {
