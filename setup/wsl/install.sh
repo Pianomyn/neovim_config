@@ -6,6 +6,7 @@ sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
 
 sudo apt install neovim
 sudo apt install bat
+sudo apt install ripgrep
 sudo apt install nodejs npm
 sudo apt install openjdk-17-jdk
 sudo apt install lua5.3
