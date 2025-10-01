@@ -15,7 +15,7 @@ M.required_linters_formatters = {
 	"flake8", -- Python Linter
 	"isort", -- Python Formatter
 	"black", -- Python Formatter
-	"autoflake", -- Python Formatter: Removes unused imports and variables
+	"autoflake", -- Python Removes unused vars/imports
 	"prettier", -- JS Formatter
 	"stylua", -- Lua Formatter
 	"golangci-lint", -- Go Linter

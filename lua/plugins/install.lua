@@ -75,7 +75,9 @@ return packer.startup(function(use)
 
 	-- Formatting and Linting
 	use({
-		"jose-elias-alvarez/null-ls.nvim",
+  "nvimtools/none-ls.nvim",
+  requires = {"nvimtools/none-ls-extras.nvim"}
+
 	})
 
 	-- Autocomplete

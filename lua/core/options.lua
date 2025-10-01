@@ -25,3 +25,8 @@ vim.opt.autoindent = true  -- Copies indentation from previous line
 vim.opt.shiftwidth = 2 -- Number of spaces inserted when indenting with S-< or S->
 
 vim.opt.splitbelow = true
+
+vim.diagnostic.config ({
+  virtual_text = true,
+  virtual_lines = false,
+})

@@ -5,17 +5,17 @@ local stylua_path = vim.fn.expand(vim.fn.stdpath("config") .. "/configs/stylua.t
 null_ls.setup({
 	sources = {
 		null_ls.builtins.diagnostics.cpplint,
-		null_ls.builtins.diagnostics.flake8,
 		null_ls.builtins.formatting.clang_format,
-		null_ls.builtins.formatting.autoflake.with({
-			extra_args = {
-				"--remove-all-unused-imports",
-				"--remove-unused-variables",
-			},
-		}),
+
+		--null_ls.builtins.diagnostics.flake8,
 		null_ls.builtins.formatting.isort,
 		null_ls.builtins.formatting.black,
+		--null_ls.builtins.formatting.autoflake,
+    require("none-ls.diagnostics.flake8"),
+    require("none-ls.diagnostics.autoflake"),
+
 		null_ls.builtins.formatting.prettier,
+
 		null_ls.builtins.formatting.stylua.with({
 			"--config-path",
 			stylua_path,
