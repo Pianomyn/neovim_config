@@ -40,7 +40,17 @@ require("mason-lspconfig").setup({
 	ensure_installed = CONSTANTS.REQUIRED_LANGUAGE_SERVERS,
 	automatic_installation = true,
 })
+
+local linters_and_formatters = {}
+
+for linter, _ in pairs(CONSTANTS.REQUIRED_LINTERS) do
+  table.insert(linters_and_formatters, linter)
+end
+for formatter, _ in pairs(CONSTANTS.REQUIRED_FORMATTERS) do
+  table.insert(linters_and_formatters, formatter)
+end
+
 require("mason-null-ls").setup({
-	ensure_installed = CONSTANTS.REQUIRED_LINTERS_FORMATTERS,
+	ensure_installed = linters_and_formatters,
 	automatic_installation = true,
 })

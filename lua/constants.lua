@@ -10,16 +10,18 @@ M.REQUIRED_LANGUAGE_SERVERS = {
 	"gopls",
 	"clangd",
 }
-M.REQUIRED_LINTERS_FORMATTERS = {
-	"flake8", -- Python Linter
-	"isort", -- Python Formatter
-	"black", -- Python Formatter
-	"autoflake", -- Python Removes unused vars/imports
-	"prettier", -- JS Formatter
-	"stylua", -- Lua Formatter
-	"golangci-lint", -- Go Linter
-	"cpplint", -- C/C++ Linter
-	"clang-format", -- C/C++ Formatter
+M.REQUIRED_LINTERS = {
+	flake8 = "python", -- Python Linter
+	["golangci-lint"] = "go", -- Go Linter
+	cpplint = "cpp", -- C/C++ Linter
+}
+M.REQUIRED_FORMATTERS = {
+	isort = "python", -- Python Formatter
+	black = "python", -- Python Formatter
+	autoflake = "python", -- Python Removes unused vars/imports
+	prettier = "javascript", -- JS Formatter
+	stylua = "lua", -- Lua Formatter
+	["clang-format"] = "cpp", -- C/C++ Formatter
 }
 M.REQUIRED_GRAMMARS = {
 	"python",

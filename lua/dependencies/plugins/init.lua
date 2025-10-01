@@ -10,3 +10,6 @@ require("dependencies.plugins.nvim-tree")
 require("dependencies.plugins.refactoring")
 require("dependencies.plugins.treesitter")
 require("dependencies.plugins.lsp")
+require("dependencies.plugins.formatter")
+require("dependencies.plugins.nvim-lint")
+
