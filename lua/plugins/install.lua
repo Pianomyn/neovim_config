@@ -73,11 +73,8 @@ return packer.startup(function(use)
 	})
 
 	-- Formatting and Linting
-	use({
-  "nvimtools/none-ls.nvim",
-  requires = {"nvimtools/none-ls-extras.nvim"}
-
-	})
+use { 'mhartington/formatter.nvim' }
+  use 'mfussenegger/nvim-lint'
 
 	-- Autocomplete
 	use({
