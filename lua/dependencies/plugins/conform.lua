@@ -1,18 +1,22 @@
 local CONSTANTS = require("constants")
 
+local NAME_MAP = {
+	ruff = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
+}
+
 local by_language = {}
 
 for formatter, language in pairs(CONSTANTS.REQUIRED_FORMATTERS) do
 	if not by_language[language] then
 		by_language[language] = {}
 	end
-  if language == "python" and formatter == "ruff" then
-    table.insert(by_language[language], "ruff_fix")
-    table.insert(by_language[language], "ruff_format")
-    table.insert(by_language[language], "ruff_organize_imports")
-   else
-    table.insert(by_language[language], formatter)
-  end
+	if NAME_MAP[formatter] ~= nil then
+		for _, mapped_name in ipairs(NAME_MAP[formatter]) do
+			table.insert(by_language[language], mapped_name)
+		end
+	else
+		table.insert(by_language[language], formatter)
+	end
 end
 
 require("conform").setup({
@@ -27,4 +31,3 @@ require("conform").setup({
 		timeout_ms = 500,
 	},
 })
-
