@@ -11,12 +11,12 @@ M.REQUIRED_LANGUAGE_SERVERS = {
 	"clangd",
 }
 M.REQUIRED_LINTERS = {
-  ruff = "python",  -- Python Linter / Formatter
+	ruff = "python", -- Python Linter / Formatter
 	["golangcilint"] = "go", -- Go Linter
 	cpplint = "cpp", -- C/C++ Linter
 }
 M.REQUIRED_FORMATTERS = {
-  ruff = "python",  -- Python Linter / Formatter
+	ruff = "python", -- Python Linter / Formatter
 	prettier = "javascript", -- JS Formatter
 	stylua = "lua", -- Lua Formatter
 	["clang-format"] = "cpp", -- C/C++ Formatter
