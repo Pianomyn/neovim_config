@@ -12,15 +12,6 @@ sudo apt install openjdk-17-jdk
 sudo apt install lua5.3
 sudo apt install golang
 
-curl https://pyenv.run | bash
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-source ~/.zshrc
-
-pyenv install 3.9.0
-pyenv global 3.9.0
-python --version
 
 zsh ../../scripts/install_jdtls.sh
 
