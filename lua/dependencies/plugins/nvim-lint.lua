@@ -2,11 +2,19 @@ local CONSTANTS = require("constants")
 
 local by_language = {}
 
+local mason_to_nvim_lint = {
+	["golangci-lint"] = "golangcilint",
+}
+
 for linter, language in pairs(CONSTANTS.REQUIRED_LINTERS) do
 	if not by_language[language] then
 		by_language[language] = {}
 	end
-	table.insert(by_language[language], linter)
+	if mason_to_nvim_lint[linter] then
+		table.insert(by_language[language], mason_to_nvim_lint[linter])
+	else
+		table.insert(by_language[language], linter)
+	end
 end
 
 require("lint").linters_by_ft = {
