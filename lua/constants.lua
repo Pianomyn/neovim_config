@@ -9,10 +9,11 @@ M.REQUIRED_LANGUAGE_SERVERS = {
 	"marksman",
 	"gopls",
 	"clangd",
+	"rust_analyzer",
 }
 M.REQUIRED_LINTERS = {
 	ruff = "python", -- Python Linter / Formatter
-	["golangcilint"] = "go", -- Go Linter
+	["golangci-lint"] = "go", -- Go Linter
 	cpplint = "cpp", -- C/C++ Linter
 }
 M.REQUIRED_FORMATTERS = {
@@ -33,6 +34,7 @@ M.REQUIRED_GRAMMARS = {
 	"java",
 	"kotlin",
 	"go",
+	"rust",
 }
 
 return M

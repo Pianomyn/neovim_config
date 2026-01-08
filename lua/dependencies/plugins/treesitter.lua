@@ -1,19 +1,8 @@
-local required_grammars = {
-	"cpp",
-	"python",
-	"javascript",
-	"typescript",
-	"html",
-	"css",
-	"lua",
-	"sql",
-	"java",
-	"kotlin",
-}
+local CONSTANTS = require("constants")
 
-require("nvim-treesitter.configs").setup({
-	ensure_installed = required_grammars,
-  sync_install = true,
+require("nvim-treesitter").setup({
+	ensure_installed = CONSTANTS.REQUIRED_GRAMMARS,
+	sync_install = true,
 	highlight = {
 		enable = true,
 	},
