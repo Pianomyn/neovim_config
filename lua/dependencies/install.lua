@@ -116,12 +116,11 @@ return packer.startup(function(use)
 	-- Colors, Themes
 	use("Mofiqul/vscode.nvim")
 	use("shaunsingh/nord.nvim")
-	use("rmehri01/onenord.nvim")
 	use({
 		"ellisonleao/gruvbox.nvim",
 		config = function()
 			require("gruvbox").setup({
-				terminal_colors = false, -- add neovim terminal colors
+				terminal_colors = true, -- add neovim terminal colors
 				undercurl = true,
 				underline = true,
 				bold = true,
@@ -132,7 +131,7 @@ return packer.startup(function(use)
 					operators = false,
 					folds = true,
 				},
-				strikethrough = true,
+				strikethrough = false,
 				invert_selection = false,
 				invert_signs = false,
 				invert_tabline = false,
@@ -145,7 +144,6 @@ return packer.startup(function(use)
 			})
 		end,
 	})
-	use("AlexvZyl/nordic.nvim")
 	use("sainnhe/gruvbox-material")
 
 	if packer_bootstrap then
