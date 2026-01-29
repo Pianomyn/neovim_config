@@ -1,14 +1,14 @@
 local theme_mapping = require("appearance.theme_mapping")
 
 vim.opt.termguicolors = true
-vim.opt.background = "light"
---vim.opt.background = "dark"
+--vim.opt.background = "light"
+vim.opt.background = "dark"
 
 -- Setup gruvbox before applying colorscheme to ensure contrast setting takes effect
 --local _ = [[
 if theme_mapping.current_color_scheme == "gruvbox" then
 	require("gruvbox").setup({
-		contrast = "soft", -- can be "hard", "soft" or empty string
+		contrast = "", -- can be "hard", "soft" or empty string
 	})
 end
 --]]
