@@ -10,10 +10,17 @@ require("nvim-treesitter").setup({
 		enable = true,
 	},
 	rainbow = {
-		--enable = true,
+		enable = true,
 		--extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
 		max_file_lines = nil, -- Do not enable for files with more than n lines, int
 		-- colors = {}, -- table of hex strings
 		-- termcolors = {} -- table of colour name strings
 	},
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "*.go", "*.py", "*.java", "*.ts", "*.tsx", "*.js", "*.jsx", "*.cpp", "*.rs" },
+	callback = function()
+		vim.treesitter.start()
+	end,
 })
