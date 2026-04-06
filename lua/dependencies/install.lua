@@ -92,6 +92,12 @@ return packer.startup(function(use)
 	-- Syntax
 	use("nvim-treesitter/nvim-treesitter")
 
+	-- Debugging
+	use("mfussenegger/nvim-dap")
+	use("leoluz/nvim-dap-go")
+	use("nvim-neotest/nvim-nio")
+	use("rcarriga/nvim-dap-ui")
+
 	-- Git
 	use({
 		"sindrets/diffview.nvim",

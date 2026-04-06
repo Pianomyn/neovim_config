@@ -12,4 +12,5 @@ require("dependencies.plugins.treesitter")
 require("dependencies.plugins.lsp")
 require("dependencies.plugins.conform")
 require("dependencies.plugins.nvim-lint")
+require("dependencies.plugins.nvim-dap")
 
