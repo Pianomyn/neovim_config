@@ -63,7 +63,6 @@ return packer.startup(function(use)
 	})
 
 	-- Language
-	use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim")
 	use("ray-x/lsp_signature.nvim")
 	use({
 		"ThePrimeagen/refactoring.nvim",

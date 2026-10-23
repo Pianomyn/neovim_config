@@ -38,4 +38,4 @@ keymap("n", "<Leader>rbf", ":Refactor extract_block_to_file<CR>", opts) -- refac
 keymap("n", "<Leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)  -- lspconfig
 keymap("n", "<Leader>d[", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)  -- lspconfig
 keymap("n", "<Leader>d]", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)  -- lspconfig
-keymap("n", "<Leader>td", ":ToggleDiag<CR>", opts) -- toggle_lsp_diagnostics
+keymap("n", "<Leader>td", "<cmd> lua vim.diagnostic.enable(not vim.diagnostic.is_enabled())<CR>", opts)

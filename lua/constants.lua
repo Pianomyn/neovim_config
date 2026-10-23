@@ -13,7 +13,6 @@ M.REQUIRED_LANGUAGE_SERVERS = {
 }
 M.REQUIRED_LINTERS = {
 	ruff = "python", -- Python Linter / Formatter
-	["golangci-lint"] = "go", -- Go Linter
 	cpplint = "cpp", -- C/C++ Linter
 }
 M.REQUIRED_FORMATTERS = {
